@@ -1,7 +1,7 @@
 ## _1-_ En package.json agregar la dependencia
 
 ```
-"modelos": "git://github.com/GPE-Sistemas/seguridad-modelos-nest.git"
+"modelos": "git://github.com/GPE-Sistemas/sdc-modelos.git"
 ```
 
 ## _2-_ En package.json agregar el script para actualizar
@@ -19,5 +19,5 @@
 ## _4-_ Importar los modelos requeridos
 
 ```
-import { ICoordenadasInput, ICoordenadas } from 'modelos/src';
+import { IUsuario } from 'modelos/src';
 ```
