@@ -1,16 +1,15 @@
-import { UsuarioRol } from "../../compartidos/usuarioRoles";
+import { UsuarioRol } from '../../compartidos/usuarioRoles';
 
 export interface ICreateUsuario {
   username: string;
-  hash: string;
-  salt: string;
+  passowrd?: string;
   email: string;
   firstName: string;
   lastName: string;
   rol?: UsuarioRol;
-  createdAt?: Date;
-  updatedAt?: Date;
-  deletedAt?: Date;
-  deleted?: boolean;
-  active?: boolean;
+  //
+  hash?: string;
+  salt?: string;
+  updatedAt?: string;
+  deactivatedAt?: string;
 }

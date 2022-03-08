@@ -1,4 +1,4 @@
-import { UsuarioRol } from "../../compartidos/usuarioRoles";
+import { UsuarioRol } from '../../compartidos/usuarioRoles';
 
 export interface IUsuario {
   username: string;
@@ -10,7 +10,6 @@ export interface IUsuario {
   rol: UsuarioRol;
   createdAt: Date;
   updatedAt: Date;
-  deletedAt: Date;
-  deleted: boolean;
+  deactivatedAt: Date;
   active: boolean;
 }
