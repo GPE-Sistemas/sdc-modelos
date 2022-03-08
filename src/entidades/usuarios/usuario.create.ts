@@ -3,7 +3,7 @@ import { UsuarioRol } from '../../compartidos/usuarioRoles';
 export interface ICreateUsuario {
   // Datos enviados desde el frontend
   username: string;
-  passowrd?: string;
+  password?: string;
   email: string;
   firstName: string;
   lastName: string;
