@@ -1,5 +1,3 @@
-import { UsuarioRol } from '../../compartidos/usuarioRoles';
-
 export interface IUsuario {
   username: string;
   hash: string;
@@ -7,7 +5,6 @@ export interface IUsuario {
   email: string;
   firstName: string;
   lastName: string;
-  rol: UsuarioRol;
   createdAt: Date;
   updatedAt: Date;
   deactivatedAt: Date;
