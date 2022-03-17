@@ -6,8 +6,8 @@ export interface IUsuario {
   email: string;
   firstName: string;
   lastName: string;
-  createdAt: Date;
-  updatedAt: Date;
-  deactivatedAt: Date;
+  createdAt: string;
+  updatedAt: string;
+  deactivatedAt: string;
   active: boolean;
 }
