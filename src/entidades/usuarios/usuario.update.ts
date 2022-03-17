@@ -1,6 +1,7 @@
 import { UsuarioRol } from '../../compartidos/usuarioRoles';
 
 export interface IUpdateUsuario {
+  _id: string;
   // Datos enviados desde el frontend
   password?: string;
   email?: string;
