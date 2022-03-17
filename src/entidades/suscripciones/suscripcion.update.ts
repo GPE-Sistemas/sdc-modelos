@@ -1,8 +1,8 @@
 export interface IUpdateSuscripcion {
   idLicencia?: string;
   idPago?: string;
-  createdAt?: Date;
-  updatedAt?: Date;
+  createdAt?: string;
+  updatedAt?: string;
   active?: boolean;
-  expiry?: Date;
+  expiry?: string;
 }
