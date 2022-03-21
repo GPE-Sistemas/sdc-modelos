@@ -26,3 +26,4 @@ __exportStar(require("./entidades/etapas-cultivo/index"), exports);
 __exportStar(require("./entidades/establecimiento/index"), exports);
 __exportStar(require("./compartidos/index"), exports);
 __exportStar(require("./entidades/oauth/index"), exports);
+__exportStar(require("./entidades/suscripciones/index"), exports);

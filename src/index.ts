@@ -10,3 +10,4 @@ export * from './entidades/etapas-cultivo/index';
 export * from './entidades/establecimiento/index';
 export * from './compartidos/index';
 export * from './entidades/oauth/index';
+export * from './entidades/suscripciones/index';
