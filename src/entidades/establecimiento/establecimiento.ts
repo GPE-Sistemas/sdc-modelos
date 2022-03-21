@@ -1,6 +1,10 @@
-import { ILocation } from "../../compartidos/location";
+import { ILocation } from '../../compartidos/location';
 
 export interface IEstablecimiento {
+  _id: string;
   name: string;
-  location: ILocation;
+  location: ILocation[];
+  createdAt: string;
+  updatedAt: string;
+  active: boolean;
 }

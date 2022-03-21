@@ -1,6 +1,8 @@
-import { ILocation } from "../../compartidos/location";
+import { ILocation } from '../../compartidos/location';
 
 export interface IUpdateEstablecimiento {
   name?: string;
-  location?: ILocation;
+  location?: ILocation[];
+  updatedAt?: string;
+  active?: boolean;
 }
