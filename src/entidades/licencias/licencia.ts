@@ -2,6 +2,7 @@ import { TiposDeLicencia } from './tipos';
 
 export interface ILicemcia {
   _id: string;
+  licenciaId: string;
   idUsuario: string;
   createdAt: string;
   updatedAt: string;
