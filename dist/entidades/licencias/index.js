@@ -17,3 +17,4 @@ exports.__esModule = true;
 __exportStar(require("./licencia"), exports);
 __exportStar(require("./licencia.create"), exports);
 __exportStar(require("./licencia.update"), exports);
+__exportStar(require("./tipos"), exports);

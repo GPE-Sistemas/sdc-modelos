@@ -1,4 +1,7 @@
 export interface ICreateLicencia {
-  nombre: string;
-  valor: number;
+  idUsuario: string;
+  createdAt?: string;
+  updatedAt?: string;
+  active?: boolean;
+  expiry?: string;
 }
