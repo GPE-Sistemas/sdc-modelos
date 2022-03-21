@@ -1,9 +1,9 @@
-import { TiposDeLicencia } from './tipos';
+import { TipoDeLicencia } from './tipos';
 
 export interface ILicenciaUpdate {
   createdAt?: string;
   updatedAt?: string;
   active?: boolean;
   expiry?: string;
-  tipo?: TiposDeLicencia;
+  tipo?: TipoDeLicencia;
 }

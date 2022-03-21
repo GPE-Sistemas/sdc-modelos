@@ -1,6 +1,6 @@
-import { TiposDeLicencia } from './tipos';
+import { TipoDeLicencia } from './tipos';
 
-export interface ILicemcia {
+export interface ILicencia {
   _id: string;
   licenciaId: string;
   idUsuario: string;
@@ -8,5 +8,5 @@ export interface ILicemcia {
   updatedAt: string;
   active: boolean;
   expiry: string;
-  tipo: TiposDeLicencia;
+  tipo: TipoDeLicencia;
 }

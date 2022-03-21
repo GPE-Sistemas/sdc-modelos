@@ -1,1 +1,1 @@
-export type TiposDeLicencia = 'FREE' | 'PRO';
+export type TipoDeLicencia = 'FREE' | 'PRO';
