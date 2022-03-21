@@ -1,5 +1,1 @@
-export enum NivelDeSuscripcion {
-  FREE,
-  PRO,
-  LITE,
-}
+export type NivelDeSuscripcion = 'FREE' | 'PRO';
