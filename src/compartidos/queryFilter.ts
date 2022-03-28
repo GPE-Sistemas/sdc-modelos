@@ -1,6 +1,6 @@
 export interface IQueryFilter {
-  page?: string;
-  limit?: string;
+  page?: string | number;
+  limit?: string | number;
   sort?: string;
   /**
    * @description
