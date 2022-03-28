@@ -1,6 +1,6 @@
 export interface IQueryFilter {
-  page?: number;
-  limit?: number;
+  page?: string;
+  limit?: string;
   sort?: string;
   /**
    * @description
@@ -38,12 +38,12 @@ export interface IQueryFilter {
 export interface IFilter {
   field: string | string[];
   type:
-    | "number"
-    | "string"
-    | "boolean"
-    | "date"
-    | "object"
-    | "regex"
-    | "objectid";
+    | 'number'
+    | 'string'
+    | 'boolean'
+    | 'date'
+    | 'object'
+    | 'regex'
+    | 'objectid';
   value: any;
 }
