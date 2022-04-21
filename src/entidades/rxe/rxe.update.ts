@@ -1,6 +1,6 @@
-import { UsuarioRol } from "../../compartidos/usuarioRoles";
+import { UsuarioRol } from '../../compartidos/usuarioRoles';
 
-export interface IUpdateRolPorEstablecimiento {
+export interface IUpdateRxe {
   idUsuario?: string;
   idEStablecimiento?: string;
   rol?: UsuarioRol;

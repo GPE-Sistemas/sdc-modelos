@@ -1,6 +1,6 @@
 import { UsuarioRol } from '../../compartidos/usuarioRoles';
 
-export interface IRolPorEstablecimiento {
+export interface IRxe {
   _id: string;
   idUsuario: string;
   idEStablecimiento: string;

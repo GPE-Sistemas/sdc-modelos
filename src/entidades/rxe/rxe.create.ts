@@ -1,6 +1,6 @@
-import { UsuarioRol } from "../../compartidos/usuarioRoles";
+import { UsuarioRol } from '../../compartidos/usuarioRoles';
 
-export interface ICreateRolPorEstablecimiento {
+export interface ICreateRxe {
   idUsuario: string;
   idEStablecimiento: string;
   rol: UsuarioRol;
