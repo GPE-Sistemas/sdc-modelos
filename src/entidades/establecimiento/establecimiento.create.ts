@@ -1,6 +1,6 @@
-import { ILocation } from '../../compartidos/location';
+import { IUbicacion } from '../../compartidos/ubicacion';
 
 export interface ICreateEstablecimiento {
-  name: string;
-  location: ILocation[];
+  nombre: string;
+  ubicacion: IUbicacion[];
 }

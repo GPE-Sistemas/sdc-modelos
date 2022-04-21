@@ -1,8 +1,8 @@
-import { ILocation } from "../../compartidos/location";
+import { IUbicacion } from '../../compartidos/ubicacion';
 
 export interface IUpdateLote {
-  name?: string;
-  location?: ILocation;
+  nombre?: string;
+  ubicacion?: IUbicacion;
   createdAt?: Date;
   upDatedAt?: Date;
   deletedAt?: Date;

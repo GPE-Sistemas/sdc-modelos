@@ -1,9 +1,9 @@
-import { ILocation } from '../../compartidos/location';
+import { IUbicacion } from '../../compartidos/ubicacion';
 
 export interface IEstablecimiento {
   _id: string;
-  name: string;
-  location: ILocation[];
+  nombre: string;
+  ubicacion: IUbicacion[];
   createdAt: string;
   updatedAt: string;
   active: boolean;

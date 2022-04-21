@@ -1,4 +1,4 @@
-export interface IPoint {
+export interface ICoordenadas {
   lat: number;
   lng: number;
 }
