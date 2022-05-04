@@ -5,7 +5,7 @@ export interface ILote {
   ubicacion: IUbicacion;
   createdAt: string;
   upDatedAt: string;
-  deletedAt: string;
+  deletedAt?: string;
   active: boolean;
   idEstablecimiento: string;
 }

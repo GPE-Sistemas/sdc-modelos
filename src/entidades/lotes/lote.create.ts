@@ -5,7 +5,7 @@ export interface ICreateLote {
   ubicacion: IUbicacion;
   createdAt: string;
   upDatedAt: string;
-  deletedAt: string;
+  deletedAt?: string;
   deleted: boolean;
   active: boolean;
   idEstablecimiento: string;
