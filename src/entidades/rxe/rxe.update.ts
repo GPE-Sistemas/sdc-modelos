@@ -2,6 +2,6 @@ import { UsuarioRol } from '../../compartidos/usuarioRoles';
 
 export interface IUpdateRxe {
   idUsuario?: string;
-  idEStablecimiento?: string;
+  idEstablecimiento?: string;
   rol?: UsuarioRol;
 }
