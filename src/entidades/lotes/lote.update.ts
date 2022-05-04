@@ -6,7 +6,6 @@ export interface IUpdateLote {
   createdAt?: string;
   upDatedAt?: string;
   deletedAt?: string;
-  deleted?: boolean;
   active?: boolean;
   idEstablecimiento?: string;
 }
