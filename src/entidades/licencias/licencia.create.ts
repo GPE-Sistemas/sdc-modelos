@@ -3,5 +3,5 @@ export interface ICreateLicencia {
   createdAt?: string;
   updatedAt?: string;
   active?: boolean;
-  expiry?: string;
+  expiracion?: string;
 }

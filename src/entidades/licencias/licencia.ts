@@ -7,6 +7,6 @@ export interface ILicencia {
   createdAt: string;
   updatedAt: string;
   active: boolean;
-  expiry: string;
+  expiracion: string;
   tipo: TipoDeLicencia;
 }

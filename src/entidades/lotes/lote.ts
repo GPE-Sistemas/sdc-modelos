@@ -6,7 +6,6 @@ export interface ILote {
   createdAt: Date;
   upDatedAt: Date;
   deletedAt: Date;
-  deleted: boolean;
   active: boolean;
   idEstablecimiento: string;
 }

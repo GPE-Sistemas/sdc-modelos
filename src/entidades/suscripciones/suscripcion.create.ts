@@ -5,5 +5,5 @@ export interface ICreateSuscripcion {
   createdAt?: string;
   updatedAt?: string;
   active?: boolean;
-  expiry?: string;
+  expiracion?: string;
 }

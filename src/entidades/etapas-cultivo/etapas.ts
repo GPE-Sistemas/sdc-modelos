@@ -1,0 +1,16 @@
+export type EtapaDeCultivo =
+  | 'VE - Emergencia'
+  | 'VC - Cotiledonar'
+  | 'V1 - Primer Nudo'
+  | 'V2 - Segundo Nudo'
+  | 'V3 - Tercer Nudo'
+  | 'V5 - Quinto Nudo'
+  | 'VN - N Nudo'
+  | 'R1 - Incio de Floración'
+  | 'R2 - Floración Completa'
+  | 'R3 - Inicio de Formación de Vainas'
+  | 'R4 - Vainas Completamente Desarrolladas'
+  | 'R5 - Inicio de Formación de Semillas'
+  | 'R6 - Semillas Completamente Desarrolladas'
+  | 'R7 - Inicio de Maduración'
+  | 'R8 - Maduración Completa';

@@ -8,6 +8,6 @@ export interface ISuscripcion {
   createdAt: string;
   updatedAt: string;
   active: boolean;
-  expiry: string;
+  expiracion: string;
   tipo: NivelDeSuscripcion;
 }
