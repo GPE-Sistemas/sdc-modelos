@@ -1,4 +1,4 @@
-export interface ISemilla {
+export interface ICreateSemilla {
   // Estoy tirando fruta.
   // ex: Soja, maní, etc
   tipoDeCultivo: string;
