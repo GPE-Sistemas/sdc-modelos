@@ -1,5 +1,5 @@
 export interface ICreatePago {
-  fecha: Date;
+  fecha: string;
   idUsuario: string;
   monto: number;
 }

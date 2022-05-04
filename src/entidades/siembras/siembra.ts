@@ -3,6 +3,7 @@ export interface ISiembra {
   idUsuario: string;
   idLote: string;
   idEstablecimiento: string;
-  fechaDeSiembra: Date;
-  createdAt: Date;
+  fechaDeSiembra: string;
+  createdAt: string;
+  fechaDeCierre: string;
 }

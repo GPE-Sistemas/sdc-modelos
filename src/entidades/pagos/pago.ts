@@ -1,5 +1,5 @@
 export interface IPago {
-  fecha: Date;
+  fecha: string;
   idUsuario: string;
   monto: number;
 }

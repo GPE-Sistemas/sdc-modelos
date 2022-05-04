@@ -3,6 +3,6 @@ export interface IUpdateSiembra {
   idUsuario?: string;
   idLote?: string;
   idEstablecimiento?: string;
-  fechaDeSiembra?: Date;
-  createdAt?: Date;
+  fechaDeSiembra?: string;
+  createdAt?: string;
 }
