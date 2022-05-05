@@ -5,5 +5,4 @@ export interface ICreateSiembra {
   idLote: string;
   idEstablecimiento: string;
   fechaDeSiembra: string;
-  createdAt: string;
 }
