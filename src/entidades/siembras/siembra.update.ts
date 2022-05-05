@@ -6,4 +6,5 @@ export interface IUpdateSiembra {
   idEstablecimiento?: string;
   fechaDeSiembra?: string;
   createdAt?: string;
+  fechaDeSierra?: string;
 }
