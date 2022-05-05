@@ -5,5 +5,5 @@ export interface ISiembra {
   idEstablecimiento: string;
   fechaDeSiembra: string;
   createdAt: string;
-  fechaDeCierre: string;
+  fechaDeCierre?: string;
 }
