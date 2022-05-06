@@ -1,4 +1,5 @@
 export interface ISiembra {
+  _id: string;
   nombre: string;
   idSemilla: string;
   idUsuario: string;
