@@ -1,3 +1,5 @@
+import { IDepartamento } from "../departamento";
+
 export interface ICronotrigoEtapa {
   R0_R1: number;
   R1_R2: number;
@@ -14,4 +16,6 @@ export interface ICronotrigo {
   ciclo: string;
   fechaSiembra: string;
   etapas: ICronotrigoEtapa;
+  // Populate
+  departamento?: IDepartamento;
 }
