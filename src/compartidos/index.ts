@@ -1,3 +1,4 @@
+export * from "./oauth";
 export * from "./ubicacion";
 export * from "./coordenadas";
 export * from "./exactly";
