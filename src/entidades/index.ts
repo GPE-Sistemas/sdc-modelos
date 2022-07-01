@@ -4,6 +4,7 @@ export * from "./distribuidor";
 export * from "./enfermedad";
 export * from "./establecimiento";
 export * from "./lote";
+export * from "./prediccion";
 export * from "./productor";
 export * from "./provincia";
 export * from "./quimica";
