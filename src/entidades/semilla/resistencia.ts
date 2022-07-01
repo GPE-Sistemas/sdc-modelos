@@ -1,8 +1,10 @@
-import { IEnfermedad } from "../enfermedad";
+export type TEnfermedad =
+  | "Fusarium de la Espiga"
+  | "Mancha Amarilla"
+  | "Mancha de la Hoja"
+  | "Roya de la Hoja";
 
 export interface IResistencia {
-  idEnfermedad: string;
   multiplicador: number;
-  // Populate
-  enfermedad?: IEnfermedad;
+  enfermedad: TEnfermedad;
 }
