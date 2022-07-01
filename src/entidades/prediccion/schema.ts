@@ -1,4 +1,5 @@
 import { IEnfermedad } from "../enfermedad";
+import { TEnfermedad } from "../semilla";
 import { ISiembra } from "../siembra";
 
 export interface IVariablesRoyaDeLaHoja {
@@ -22,7 +23,7 @@ export interface IVariablesFusariumDeLaEspiga {
 }
 
 export interface IPrediccionEnfermedad {
-  enfermedad: string;
+  enfermedad: TEnfermedad;
   resultado: number;
   variables:
     | IVariablesRoyaDeLaHoja
