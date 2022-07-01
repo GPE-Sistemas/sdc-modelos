@@ -23,6 +23,7 @@ export interface IVariablesFusariumDeLaEspiga {
 
 export interface IPrediccionEnfermedad {
   idEnfermedad: string;
+  resultado: number;
   variables:
     | IVariablesRoyaDeLaHoja
     | IVariablesManchaAmarilla
@@ -33,13 +34,22 @@ export interface IPrediccionEnfermedad {
   enfermedad?: IEnfermedad[];
 }
 
+export interface IPrediccionEstacion {
+  idEstacion: string;
+  distanciaMetros: number;
+  precipitaciones: number;
+  humedadRelativa: number;
+  temperaturaMaxima: number;
+  temperaturaMinima: number;
+  temperaturaPromedio: number;
+}
+
 export interface IPrediccion {
   _id: string;
   fecha: string;
   idSiembra: string;
   enfermedades: IPrediccionEnfermedad[];
-  idEstacion: string;
-  distanciaMetros: number;
+  estacion: IPrediccionEstacion;
   // Populate
   siembra?: ISiembra;
 }
