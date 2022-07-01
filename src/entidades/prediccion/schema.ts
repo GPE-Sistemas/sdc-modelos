@@ -22,16 +22,13 @@ export interface IVariablesFusariumDeLaEspiga {
 }
 
 export interface IPrediccionEnfermedad {
-  idEnfermedad: string;
+  enfermedad: string;
   resultado: number;
   variables:
     | IVariablesRoyaDeLaHoja
     | IVariablesManchaAmarilla
     | IVariablesManchaDeLaHoja
     | IVariablesFusariumDeLaEspiga;
-
-  // Populate
-  enfermedad?: IEnfermedad[];
 }
 
 export interface IPrediccionEstacion {
