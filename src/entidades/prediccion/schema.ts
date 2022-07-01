@@ -11,7 +11,7 @@ export interface IVariablesManchaAmarilla {
   DPr?: number; // Dias con lluvia > 2mm
 }
 
-export interface IVariablesManchaManchaDeLaHoja {
+export interface IVariablesManchaDeLaHoja {
   DPr?: number; // Dias con lluvia > 10mm
   DHR?: number; // Dias con HR >= 80%
 }
@@ -27,7 +27,7 @@ export interface IPrediccionEnfermedad {
   variables:
     | IVariablesRoyaDeLaHoja
     | IVariablesManchaAmarilla
-    | IVariablesManchaManchaDeLaHoja
+    | IVariablesManchaDeLaHoja
     | IVariablesFusariumDeLaEspiga;
 
   // Populate
