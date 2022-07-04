@@ -1,4 +1,5 @@
 import { ICoordenadas } from "../../compartidos";
+import { IPrediccion } from "../prediccion";
 
 export interface IUpdateSiembra {
   idQuimica?: string;
@@ -11,4 +12,5 @@ export interface IUpdateSiembra {
   fechaSiembra?: string;
   fechaFinal?: string;
   coordenadas?: ICoordenadas;
+  ultimaPrediccion?: IPrediccion;
 }
