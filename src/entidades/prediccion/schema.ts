@@ -45,6 +45,7 @@ export interface IPrediccionEstacion {
 export interface IPrediccion {
   _id: string;
   fecha: string;
+  etapa: number;
   idSiembra: string;
   enfermedades: IPrediccionEnfermedad[];
   estacion: IPrediccionEstacion;
