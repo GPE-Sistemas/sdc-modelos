@@ -1,4 +1,7 @@
-import { IEnfermedad } from "../enfermedad";
+import { IDistribuidor } from "../distribuidor";
+import { IEstablecimiento } from "../establecimiento";
+import { IProductor } from "../productor";
+import { IQuimica } from "../quimica";
 import { TEnfermedad } from "../semilla";
 import { ISiembra } from "../siembra";
 
@@ -49,6 +52,15 @@ export interface IPrediccion {
   idSiembra: string;
   enfermedades: IPrediccionEnfermedad[];
   estacion: IPrediccionEstacion;
+  idQuimica?: string;
+  idDistribuidor?: string;
+  idProductor?: string;
+  idEstablecimiento?: string;
+
   // Populate
   siembra?: ISiembra;
+  quimica?: IQuimica;
+  distribuidor?: IDistribuidor;
+  productor?: IProductor;
+  establecimiento?: IEstablecimiento;
 }
