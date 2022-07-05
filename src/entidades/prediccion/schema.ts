@@ -23,6 +23,7 @@ export interface IVariablesManchaDeLaHoja {
 export interface IVariablesFusariumDeLaEspiga {
   PMoj?: number; // número de períodos de mojado de 2 días con registro de precipitación > 0,2 y HR>81% en el día 1 y una HR≥78% en el día 2.
   GDN?: number;
+  GDAcum?: number; // Grados dia acumulados
 }
 
 export interface IPrediccionEnfermedad {
