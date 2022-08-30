@@ -6,6 +6,7 @@ export interface IProductor {
   idQuimica?: string;
   idDistribuidor?: string;
   nombre: string;
+  logo: string;
   fechaCreacion: string;
   // Populate
   quimica?: IQuimica;
