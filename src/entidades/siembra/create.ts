@@ -8,6 +8,7 @@ export interface ICreateSiembra {
   idLote: string;
   idDepartamento?: string;
   idSemilla: string;
+  idCronotrigo?: string;
   fechaSiembra?: string;
   coordenadas?: ICoordenadas;
 }

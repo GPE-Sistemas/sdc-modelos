@@ -1,4 +1,5 @@
 import { ICoordenadas } from "../../compartidos";
+import { ICronotrigo } from "../cronotrigo";
 import { IDepartamento } from "../departamento";
 import { IDistribuidor } from "../distribuidor";
 import { IEstablecimiento } from "../establecimiento";
@@ -17,6 +18,7 @@ export interface ISiembra {
   idLote: string;
   idDepartamento?: string;
   idSemilla: string;
+  idCronotrigo?: string;
   fechaSiembra: string;
   fechaFinal?: string;
   coordenadas?: ICoordenadas;
@@ -29,4 +31,5 @@ export interface ISiembra {
   lote?: ILote;
   departamento?: IDepartamento;
   semilla?: ISemilla;
+  cronotrigo?: ICronotrigo;
 }

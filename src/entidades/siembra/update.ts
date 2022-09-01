@@ -9,6 +9,7 @@ export interface IUpdateSiembra {
   idLote?: string;
   idDepartamento?: string;
   idSemilla?: string;
+  idCronotrigo?: string;
   fechaSiembra?: string;
   fechaFinal?: string;
   coordenadas?: ICoordenadas;
