@@ -1,4 +1,5 @@
 export interface IUpdateQuimica {
   nombre?: string;
-  logo: string;
+  logo?: string;
+  idEmpresas?: string[];
 }

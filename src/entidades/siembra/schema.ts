@@ -20,7 +20,7 @@ export interface ISiembra {
   idSemilla: string;
   idCronotrigo?: string;
   fechaSiembra: string;
-  fechaFinal?: string;
+  fechaCosecha?: string;
   coordenadas?: ICoordenadas;
   ultimaPrediccion?: IPrediccion;
   // Populate

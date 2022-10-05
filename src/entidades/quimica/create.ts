@@ -1,4 +1,5 @@
 export interface ICreateQuimica {
   nombre: string;
-  logo: string;
+  logo?: string;
+  idEmpresas?: string[];
 }

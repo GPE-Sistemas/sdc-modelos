@@ -11,7 +11,7 @@ export interface IUpdateSiembra {
   idSemilla?: string;
   idCronotrigo?: string;
   fechaSiembra?: string;
-  fechaFinal?: string;
+  fechaCosecha?: string;
   coordenadas?: ICoordenadas;
   ultimaPrediccion?: IPrediccion;
 }
