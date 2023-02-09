@@ -1,5 +1,5 @@
 export * from "./agroquimico";
-export * from "./cronotrigo";
+export * from "./crono";
 export * from "./departamento";
 export * from "./distribuidor";
 export * from "./empresa";

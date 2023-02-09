@@ -1,5 +1,5 @@
 import { ICoordenadas } from "../../compartidos";
-import { ICronotrigo } from "../cronotrigo";
+import { ICrono } from "../crono";
 import { IDepartamento } from "../departamento";
 import { IDistribuidor } from "../distribuidor";
 import { IEstablecimiento } from "../establecimiento";
@@ -31,5 +31,5 @@ export interface ISiembra {
   lote?: ILote;
   departamento?: IDepartamento;
   semilla?: ISemilla;
-  cronotrigo?: ICronotrigo;
+  cronotrigo?: ICrono;
 }

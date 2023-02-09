@@ -1,6 +1,8 @@
 import { IDepartamento } from "../departamento";
 
-export interface ICronotrigoEtapa {
+export type Cultivo = "Soja" | "Trigo";
+
+export interface IEtapasTrigo {
   R0_R1: number;
   R1_R2: number;
   R2_R3: number;
@@ -10,13 +12,22 @@ export interface ICronotrigoEtapa {
   R6_R7: number;
 }
 
-export interface ICronotrigo {
+export interface IEtapasSoja {
+  siembra_emergencia: number;
+  emergencia_R1: number;
+  R1_R3: number;
+  R3_R5: number;
+  R5_R7: number;
+}
+
+export interface ICrono {
   _id: string;
+  cultivo: Cultivo;
   idDepartamento: string;
   ciclo: string;
   diaSiembra: number;
   mesSiembra: number;
-  etapas: ICronotrigoEtapa;
+  etapas: IEtapasSoja | IEtapasTrigo;
   // Populate
   departamento?: IDepartamento;
 }

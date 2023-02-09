@@ -14,16 +14,5 @@ var __exportStar = (this && this.__exportStar) || function(m, exports) {
     for (var p in m) if (p !== "default" && !Object.prototype.hasOwnProperty.call(exports, p)) __createBinding(exports, m, p);
 };
 exports.__esModule = true;
-__exportStar(require("./entidades/usuarios/index"), exports);
-__exportStar(require("./entidades/suscripciones/index"), exports);
-__exportStar(require("./entidades/siembras/index"), exports);
-__exportStar(require("./entidades/plantas/index"), exports);
-__exportStar(require("./entidades/roles-por-establecimiento/index"), exports);
-__exportStar(require("./entidades/pagos/index"), exports);
-__exportStar(require("./entidades/lotes/index"), exports);
-__exportStar(require("./entidades/licencias/index"), exports);
-__exportStar(require("./entidades/etapas-cultivo/index"), exports);
-__exportStar(require("./entidades/establecimiento/index"), exports);
-__exportStar(require("./compartidos/index"), exports);
-__exportStar(require("./entidades/oauth/index"), exports);
-__exportStar(require("./entidades/suscripciones/index"), exports);
+__exportStar(require("./entidades"), exports);
+__exportStar(require("./compartidos"), exports);
