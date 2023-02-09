@@ -18,7 +18,7 @@ export interface ISiembra {
   idLote: string;
   idDepartamento?: string;
   idSemilla: string;
-  idCronotrigo?: string;
+  idCrono?: string;
   fechaSiembra: string;
   fechaCosecha?: string;
   coordenadas?: ICoordenadas;
@@ -31,5 +31,5 @@ export interface ISiembra {
   lote?: ILote;
   departamento?: IDepartamento;
   semilla?: ISemilla;
-  cronotrigo?: ICrono;
+  crono?: ICrono;
 }
