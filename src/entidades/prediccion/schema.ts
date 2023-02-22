@@ -26,6 +26,12 @@ export interface IVariablesFusariumDeLaEspiga {
   GDAcum?: number; // Grados dia acumulados
 }
 
+export interface IVariablesFinDeCiclo {
+  PtAc7?: number; // Suma de precipitaciones de dias con mas de 7mm.
+  DPr7?: number; // Dias con precipitaciones > 7mm
+  Lt7?: number; // Multiplicacion de dias con precipitaciones > 7mm por cantidad de dias con precipitaciones > 7mm
+}
+
 export interface IPrediccionEnfermedad {
   enfermedad: TEnfermedad;
   resultado: number;
@@ -33,7 +39,8 @@ export interface IPrediccionEnfermedad {
     | IVariablesRoyaDeLaHoja
     | IVariablesManchaAmarilla
     | IVariablesManchaDeLaHoja
-    | IVariablesFusariumDeLaEspiga;
+    | IVariablesFusariumDeLaEspiga
+    | IVariablesFinDeCiclo;
 }
 
 export interface IPrediccionEstacion {
