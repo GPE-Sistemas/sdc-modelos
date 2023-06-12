@@ -14,4 +14,5 @@ export * from "./provincia";
 export * from "./quimica";
 export * from "./semilla";
 export * from "./siembra";
+export * from "./tokenPush";
 export * from "./usuario";
