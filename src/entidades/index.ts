@@ -7,6 +7,7 @@ export * from "./enfermedad";
 export * from "./establecimiento";
 export * from "./fumigacion";
 export * from "./lote";
+export * from "./notificacion";
 export * from "./prediccion";
 export * from "./productor";
 export * from "./provincia";
