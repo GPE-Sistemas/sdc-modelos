@@ -2,6 +2,7 @@ import { IDistribuidor } from '../distribuidor';
 import { IEstablecimiento } from '../establecimiento';
 import { IProductor } from '../productor';
 import { IQuimica } from '../quimica';
+import { ISiembra } from '../siembra';
 import { EstadoAlerta, IEstadoAlerta } from './estado';
 
 export interface IAlerta {
@@ -11,6 +12,7 @@ export interface IAlerta {
   idDistribuidor?: string;
   idProductor?: string;
   idEstablecimiento?: string;
+  idSiembra?: string;
   // Datos Autogenerados
   fecha?: string;
   // Estados de la alerta
@@ -25,4 +27,5 @@ export interface IAlerta {
   distribuidor?: IDistribuidor;
   productor?: IProductor;
   establecimiento?: IEstablecimiento;
+  siembra?: ISiembra;
 }

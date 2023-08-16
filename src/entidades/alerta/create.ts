@@ -6,6 +6,7 @@ export interface ICreateAlerta {
   idDistribuidor?: string;
   idProductor?: string;
   idEstablecimiento?: string;
+  idSiembra?: string;
   // Datos Autogenerados
   fecha?: string;
   // Estados de la alerta
