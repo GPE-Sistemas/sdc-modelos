@@ -1,11 +1,14 @@
 export interface ICreateFumigacion {
+  // Tenant
   idQuimica?: string;
   idDistribuidor?: string;
   idProductor?: string;
   idEstablecimiento?: string;
-  //
-  fecha: string;
-  idSiembra: string;
+  // Datos Autogenerados
+  fechaCreacion?: string;
+  // Info de Fumigación
+  fechaFumigacion?: string;
+  idSiembra?: string;
   idAgroquimico?: string;
-  duracion?: number;
+  duracion?: number; // 15 días
 }
