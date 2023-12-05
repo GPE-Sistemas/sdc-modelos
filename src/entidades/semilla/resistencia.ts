@@ -1,11 +1,15 @@
 export type TEnfermedad =
+  // Trigo
   | "Fusarium de la Espiga"
   | "Mancha Amarilla"
   | "Mancha de la Hoja"
   | "Roya de la Hoja"
-  | "Fin de Ciclo";
+  // Soja
+  | "Fin de Ciclo"
+  // Maiz
+  | "Roya del Maiz";
 
 export interface IResistencia {
-  multiplicador: number;
-  enfermedad: TEnfermedad;
+  multiplicador?: number;
+  enfermedad?: TEnfermedad;
 }
