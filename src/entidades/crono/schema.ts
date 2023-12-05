@@ -21,7 +21,9 @@ export interface IEtapasSoja {
 }
 
 export interface IEtapasMaiz {
-  [key: string]: number;
+  siembra_emergencia?: number;
+  emergencia_floracion?: number;
+  floracion_madurez?: number;
 }
 
 export interface ICrono {
