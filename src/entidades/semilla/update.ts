@@ -5,5 +5,6 @@ export interface IUpdateSemilla {
   cultivo?: string;
   variedad?: string;
   ciclo?: string;
+  campania?: string;
   resistencia?: IResistencia[];
 }

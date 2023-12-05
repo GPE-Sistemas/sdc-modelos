@@ -5,5 +5,6 @@ export interface ICreateSemilla {
   cultivo?: string;
   variedad?: string;
   ciclo?: string;
+  campania?: string;
   resistencia?: IResistencia[];
 }
