@@ -10,6 +10,11 @@ export interface IVariablesRoyaDeLaHoja {
   DHR?: number; // Dias sin lluvia (>= 0.2) y HR >= 70%
 }
 
+export interface IVariablesRoyaDelMaiz {
+  GD?: number; // Grados Dia
+  DHR?: number; // Dias sin lluvia (>= 0.2) y HR >= 70%
+}
+
 export interface IVariablesManchaAmarilla {
   DPrHRT?: number; // Dias con lluvia > 1mm y HR >= 80% y temp max <= 32°C y temp min >= 8°C
   DPr?: number; // Dias con lluvia > 2mm
@@ -40,7 +45,8 @@ export interface IPrediccionEnfermedad {
     | IVariablesManchaAmarilla
     | IVariablesManchaDeLaHoja
     | IVariablesFusariumDeLaEspiga
-    | IVariablesFinDeCiclo;
+    | IVariablesFinDeCiclo
+    | IVariablesRoyaDelMaiz;
 }
 
 export interface IPrediccionEstacion {
