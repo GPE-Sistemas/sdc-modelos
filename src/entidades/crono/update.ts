@@ -1,4 +1,4 @@
-import { Cultivo, IEtapasSoja, IEtapasTrigo } from "./schema";
+import { Cultivo, IEtapasMaiz, IEtapasSoja, IEtapasTrigo } from "./schema";
 
 export interface IUpdateCrono {
   cultivo: Cultivo;
@@ -6,5 +6,5 @@ export interface IUpdateCrono {
   ciclo: string;
   diaSiembra: number;
   mesSiembra: number;
-  etapas: IEtapasSoja | IEtapasTrigo;
+  etapas: IEtapasSoja | IEtapasTrigo | IEtapasMaiz;
 }

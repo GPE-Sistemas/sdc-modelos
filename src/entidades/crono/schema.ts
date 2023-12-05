@@ -33,7 +33,7 @@ export interface ICrono {
   ciclo?: string;
   diaSiembra?: number;
   mesSiembra?: number;
-  etapas?: IEtapasSoja | IEtapasTrigo;
+  etapas?: IEtapasSoja | IEtapasTrigo | IEtapasMaiz;
   // Populate
   departamento?: IDepartamento;
 }
