@@ -26,9 +26,8 @@ export declare interface BulkWriteOperationError {
   index: number;
   code: number;
   errmsg: string;
-  errInfo: Document;
-  // op: Document | UpdateStatement | DeleteStatement;
-  op: any;
+  errInfo: any; // Document;
+  op: any; // Document | UpdateStatement | DeleteStatement
 }
 
 export interface WriteError {
@@ -40,12 +39,12 @@ export declare interface BulkResult {
   writeErrors: WriteError[];
   // writeConcernErrors: WriteConcernError[];
   writeConcernErrors: any[];
-  insertedIds: Document[];
+  insertedIds: any[]; // Document[];
   nInserted: number;
   nUpserted: number;
   nMatched: number;
   nModified: number;
   nRemoved: number;
-  upserted: Document[];
-  opTime?: Document;
+  upserted: any[]; // Document[];
+  opTime?: any; // Document;
 }
