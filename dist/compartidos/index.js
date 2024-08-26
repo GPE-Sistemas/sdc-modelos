@@ -18,6 +18,7 @@ __exportStar(require("./oauth"), exports);
 __exportStar(require("./coordenadas"), exports);
 __exportStar(require("./exactly"), exports);
 __exportStar(require("./listado"), exports);
+__exportStar(require("./mongo"), exports);
 __exportStar(require("./queryParams"), exports);
 __exportStar(require("./socket-message"), exports);
 __exportStar(require("./ubicacion"), exports);
