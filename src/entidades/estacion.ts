@@ -5,6 +5,10 @@ export interface IEstacion {
   user?: string;
   pass?: string;
   //
+  name?: {
+    original: string; // "0020B01B"
+    custom: string; // "Manexa"
+  };
   info?: {
     device_id: number; // 7
     device_name: string; // "iMetos 3.3";
