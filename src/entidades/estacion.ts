@@ -51,6 +51,7 @@ export interface IEstacion {
       vals: number[]; // [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
       sum: number; // 0
     };
+    volumetricAverage: number; // 0;
   };
 }
 
