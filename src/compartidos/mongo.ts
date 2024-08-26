@@ -17,3 +17,35 @@ export interface DeleteResult {
   /** The number of documents that were deleted */
   deletedCount: number;
 }
+
+export interface BulkWriteResult {
+  result: BulkResult;
+}
+
+export declare interface BulkWriteOperationError {
+  index: number;
+  code: number;
+  errmsg: string;
+  errInfo: Document;
+  // op: Document | UpdateStatement | DeleteStatement;
+  op: any;
+}
+
+export interface WriteError {
+  err: BulkWriteOperationError;
+}
+
+export declare interface BulkResult {
+  ok: number;
+  writeErrors: WriteError[];
+  // writeConcernErrors: WriteConcernError[];
+  writeConcernErrors: any[];
+  insertedIds: Document[];
+  nInserted: number;
+  nUpserted: number;
+  nMatched: number;
+  nModified: number;
+  nRemoved: number;
+  upserted: Document[];
+  opTime?: Document;
+}
