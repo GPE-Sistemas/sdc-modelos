@@ -42,7 +42,11 @@ export interface IUsuario {
 }
 
 type OmitirCreate = "_id";
-export interface ICreateUsuario extends Omit<Partial<IUsuario>, OmitirCreate> {}
+export interface ICreateUsuario extends Omit<Partial<IUsuario>, OmitirCreate> {
+  password?: string;
+}
 
 type OmitirUpdate = "_id";
-export interface IUpdateUsuario extends Omit<Partial<IUsuario>, OmitirUpdate> {}
+export interface IUpdateUsuario extends Omit<Partial<IUsuario>, OmitirUpdate> {
+  password?: string;
+}
