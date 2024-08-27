@@ -10,7 +10,7 @@ export interface IEstacion {
     custom: string; // "Manexa"
   };
   info?: {
-    device_id: number; // 7
+    device_id?: number; // 7
     device_name: string; // "iMetos 3.3";
     uid: string; // "249BC3085B7767E8";
     firmware: string; // "08.521.20200329";

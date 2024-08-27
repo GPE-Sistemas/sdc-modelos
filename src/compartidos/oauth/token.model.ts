@@ -1,5 +1,5 @@
 import { IClient } from "./client.model";
-import { IUsuario } from "../../entidades/usuario/schema";
+import { IUsuario } from "../../entidades/usuario";
 
 export interface IToken {
   accessToken: string;
