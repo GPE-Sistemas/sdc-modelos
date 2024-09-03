@@ -30,6 +30,7 @@ export interface ILote {
   capacidadDeRiego?: number;
   puntoMarchitez?: number;
   anchoDeBulbo?: number;
+  metrosLinealesHas?: number;
   idQuimica?: string;
   idDistribuidor?: string;
   idProductor?: string;
