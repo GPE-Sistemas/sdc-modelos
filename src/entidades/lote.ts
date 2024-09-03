@@ -26,7 +26,7 @@ export interface ILote {
   ubicacion?: IUbicacion;
   capacidadDeCampo?: number;
   idSondaSuelo?: string;
-  suelo?: ISuelo[];
+  suelos?: ISuelo[];
   capacidadDeRiego?: number;
   puntoMarchitez?: number;
   anchoDeBulbo?: number;
