@@ -1,22 +1,23 @@
-import { IUbicacion } from "../compartidos/ubicacion";
-import { IDepartamento } from "./departamento";
-import { IDistribuidor } from "./distribuidor";
-import { IEstablecimiento } from "./establecimiento";
-import { IEstacion } from "./estacion";
-import { IProductor } from "./productor";
-import { IQuimica } from "./quimica";
+import { IUbicacion } from '../compartidos/ubicacion';
+import { IDepartamento } from './departamento';
+import { IDistribuidor } from './distribuidor';
+import { IEstablecimiento } from './establecimiento';
+import { IEstacion } from './estacion';
+import { IProductor } from './productor';
+import { IQuimica } from './quimica';
 
 export interface ISuelo {
   profundidad?: number;
   textura?:
-    | "Arcilloso"
-    | "Franco arcilloso"
-    | "Franco"
-    | "Franco arenoso"
-    | "Arenoso";
+    | 'Arcilloso'
+    | 'Franco arcilloso'
+    | 'Franco'
+    | 'Franco arenoso'
+    | 'Arenoso';
   hayRaices?: boolean;
   capacidadDeCampo?: number;
   puntoMarchitez?: number;
+  numeroDeSensor?: number;
 }
 
 export interface ILote {
@@ -43,21 +44,21 @@ export interface ILote {
 }
 
 type OmitirCreate =
-  | "_id"
-  | "quimica"
-  | "distribuidor"
-  | "productor"
-  | "establecimiento"
-  | "departamento"
-  | "sondaSuelo";
+  | '_id'
+  | 'quimica'
+  | 'distribuidor'
+  | 'productor'
+  | 'establecimiento'
+  | 'departamento'
+  | 'sondaSuelo';
 export interface ICreateLote extends Omit<Partial<ILote>, OmitirCreate> {}
 
 type OmitirUpdate =
-  | "_id"
-  | "quimica"
-  | "distribuidor"
-  | "productor"
-  | "establecimiento"
-  | "departamento"
-  | "sondaSuelo";
+  | '_id'
+  | 'quimica'
+  | 'distribuidor'
+  | 'productor'
+  | 'establecimiento'
+  | 'departamento'
+  | 'sondaSuelo';
 export interface IUpdateLote extends Omit<Partial<ILote>, OmitirUpdate> {}
