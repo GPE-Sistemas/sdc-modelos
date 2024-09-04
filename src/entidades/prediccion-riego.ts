@@ -5,7 +5,7 @@ import { IProductor } from "./productor";
 import { IQuimica } from "./quimica";
 import { ISiembra } from "./siembra";
 
-interface IPronosticoRiego {
+export interface IPronosticoRiego {
   fecha?: string;
   regar?: boolean;
   afd?: number;
@@ -16,7 +16,7 @@ interface IPronosticoRiego {
   previsionConsumo3Dias?: number;
 }
 
-interface IAguaDisponibleNivel {
+export interface IAguaDisponibleNivel {
   profundidad?: number;
   capacidadCampo?: number;
   aguaUtil?: number;
@@ -25,12 +25,12 @@ interface IAguaDisponibleNivel {
   aguaUtilFacilmenteDisponible?: number;
 }
 
-interface IResultadoPrediccionRiego {
+export interface IResultadoPrediccionRiego {
   fecha?: string;
   cantidad?: number;
 }
 
-interface IVariablesPrediccionRiego {
+export interface IVariablesPrediccionRiego {
   aguaTotalDisponible: number;
   niveles: IAguaDisponibleNivel[];
   umbralDeRiego: number;
