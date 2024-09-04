@@ -9,6 +9,7 @@ export * from "./estacion";
 export * from "./fumigacion";
 export * from "./lote";
 export * from "./notificacion";
+export * from "./prediccion-riego";
 export * from "./prediccion";
 export * from "./productor";
 export * from "./provincia";
