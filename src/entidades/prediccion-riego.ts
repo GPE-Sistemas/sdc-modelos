@@ -18,7 +18,7 @@ export interface IPronosticoRiego {
   previsionConsumo3Dias?: number;
 }
 
-export interface IAguaDisponibleNivel {
+export interface INivelCapacidadCampo {
   profundidad?: number;
   capacidadCampo?: number;
   aguaUtil?: number;
@@ -33,20 +33,25 @@ export interface IResultadoPrediccionRiego {
   cantidad?: number;
 }
 
-export interface IAguaNivel {
-  numeroDeSensor: number;
-  humedad: number;
-  aguaUtil: number;
+export interface INivelLecturaSensor {
+  numeroDeSensor?: number;
+  humedad?: number;
+  profundidad?: number;
+  aguaUtil?: number;
+  fraccionDeConsumo?: number;
+  capacidadDeRetencion?: number;
+  aguaUtilFacilmenteDisponible?: number;
+  humedadSueloLeida?: number;
 }
 
 export interface IVariablesPrediccionRiego {
-  et0Promedio: number;
-  umbralDeRiego: number;
-  aguaTotalDisponible: number;
-  aguaUtilPotencial: number;
-  niveles: IAguaDisponibleNivel[];
-  lecturaNiveles: IAguaNivel[];
-  aguaUtilReal: number;
+  et0Promedio?: number;
+  umbralDeRiego?: number;
+  aguaUtilFacilmenteDisponiblePotencial?: number;
+  capacidadRetencionTotal?: number;
+  nivelesCapacidadCampo?: INivelCapacidadCampo[];
+  nivelesLecturaSensor?: INivelLecturaSensor[];
+  aguaUtilFacilmenteDisponibleReal?: number;
   pronosticosRiego: IPronosticoRiego[];
 }
 
