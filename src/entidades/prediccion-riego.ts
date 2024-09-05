@@ -23,6 +23,7 @@ export interface IAguaDisponibleNivel {
   fraccionDeConsumo?: number;
   capacidadDeRetencion?: number;
   aguaUtilFacilmenteDisponible?: number;
+  humedadSueloLeida?: number;
 }
 
 export interface IResultadoPrediccionRiego {
