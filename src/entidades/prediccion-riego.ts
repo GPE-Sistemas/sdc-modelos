@@ -52,7 +52,7 @@ export interface IVariablesPrediccionRiego {
   nivelesCapacidadCampo?: INivelCapacidadCampo[];
   nivelesLecturaSensor?: INivelLecturaSensor[];
   aguaUtilFacilmenteDisponibleReal?: number;
-  pronosticosRiego: IPronosticoRiego[];
+  pronosticosRiego?: IPronosticoRiego[];
 }
 
 export interface IPrediccionRiego {
