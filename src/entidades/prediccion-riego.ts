@@ -9,10 +9,12 @@ export interface IPronosticoRiego {
   fecha?: string;
   regar?: boolean;
   afd?: number;
+  et0?: number;
+  kc?: number;
   consumoAgua?: number;
   lluvias?: number;
   saldoDiario?: number;
-  ccProcentual?: number;
+  ccPorcentual?: number;
   previsionConsumo3Dias?: number;
 }
 
