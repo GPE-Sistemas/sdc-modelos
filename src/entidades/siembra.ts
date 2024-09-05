@@ -1,13 +1,13 @@
-import { ICoordenadas } from "../compartidos";
-import { ICrono } from "./crono";
-import { IDepartamento } from "./departamento";
-import { IDistribuidor } from "./distribuidor";
-import { IEstablecimiento } from "./establecimiento";
-import { ILote } from "./lote";
-import { IPrediccion } from "./prediccion";
-import { IProductor } from "./productor";
-import { IQuimica } from "./quimica";
-import { ISemilla } from "./semilla";
+import { ICoordenadas } from '../compartidos';
+import { ICrono } from './crono';
+import { IDepartamento } from './departamento';
+import { IDistribuidor } from './distribuidor';
+import { IEstablecimiento } from './establecimiento';
+import { ILote } from './lote';
+import { IPrediccion } from './prediccion';
+import { IProductor } from './productor';
+import { IQuimica } from './quimica';
+import { ISemilla } from './semilla';
 
 export interface ISiembra {
   _id?: string;
@@ -21,6 +21,7 @@ export interface ISiembra {
   idCrono?: string;
   fechaSiembra?: string;
   fechaCosecha?: string;
+  activa?: boolean;
   coordenadas?: ICoordenadas;
   ultimaPrediccion?: IPrediccion;
   // Populate
@@ -35,25 +36,25 @@ export interface ISiembra {
 }
 
 type OmitirCreate =
-  | "_id"
-  | "quimica"
-  | "distribuidor"
-  | "productor"
-  | "establecimiento"
-  | "lote"
-  | "departamento"
-  | "semilla"
-  | "crono";
+  | '_id'
+  | 'quimica'
+  | 'distribuidor'
+  | 'productor'
+  | 'establecimiento'
+  | 'lote'
+  | 'departamento'
+  | 'semilla'
+  | 'crono';
 export interface ICreateSiembra extends Omit<Partial<ISiembra>, OmitirCreate> {}
 
 type OmitirUpdate =
-  | "_id"
-  | "quimica"
-  | "distribuidor"
-  | "productor"
-  | "establecimiento"
-  | "lote"
-  | "departamento"
-  | "semilla"
-  | "crono";
+  | '_id'
+  | 'quimica'
+  | 'distribuidor'
+  | 'productor'
+  | 'establecimiento'
+  | 'lote'
+  | 'departamento'
+  | 'semilla'
+  | 'crono';
 export interface IUpdateSiembra extends Omit<Partial<ISiembra>, OmitirUpdate> {}
