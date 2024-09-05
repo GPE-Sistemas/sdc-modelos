@@ -33,12 +33,19 @@ export interface IResultadoPrediccionRiego {
   cantidad?: number;
 }
 
+export interface IAguaNivel {
+  numeroDeSensor: number;
+  humedad: number;
+  aguaUtil: number;
+}
+
 export interface IVariablesPrediccionRiego {
-  aguaTotalDisponible: number;
-  niveles: IAguaDisponibleNivel[];
-  umbralDeRiego: number;
   et0Promedio: number;
+  umbralDeRiego: number;
+  aguaTotalDisponible: number;
   aguaUtilPotencial: number;
+  niveles: IAguaDisponibleNivel[];
+  lecturaNiveles: IAguaNivel[];
   aguaUtilReal: number;
   pronosticosRiego: IPronosticoRiego[];
 }
