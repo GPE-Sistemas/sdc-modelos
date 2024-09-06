@@ -51,25 +51,25 @@ export interface ICalculoRaices {
   nivel?: number;
   capacidadCampo?: number;
   precipitaciones?: number;
-  inicioDia: {
-    fecha: string;
-    humedad: number;
+  inicioDia?: {
+    fecha?: string;
+    humedad?: number;
   };
-  finDia: {
-    fecha: string;
-    humedad: number;
+  finDia?: {
+    fecha?: string;
+    humedad?: number;
   };
-  inicioNoche: {
-    fecha: string;
-    humedad: number;
+  inicioNoche?: {
+    fecha?: string;
+    humedad?: number;
   };
-  finNoche: {
-    fecha: string;
-    humedad: number;
+  finNoche?: {
+    fecha?: string;
+    humedad?: number;
   };
-  horasDia: number;
-  horasNoche: number;
-  humedadMaxima: number;
+  horasDia?: number;
+  horasNoche?: number;
+  humedadMaxima?: number;
   deltaDiario?: number;
   deltaDia?: number;
   pendienteDia?: number;
