@@ -44,7 +44,28 @@ export interface INivelLecturaSensor {
   humedadSueloLeida?: number;
 }
 
+export interface ICalculoRaices {
+  profundidad?: number;
+  nivel?: number;
+  capacidadCampo?: number;
+  precipitaciones?: number;
+  humedadMaxima?: number;
+  humedadInicioDia?: number;
+  humedadFinDia?: number;
+  humedadInicioNoche?: number;
+  humedadFinNoche?: number;
+  deltaDiario?: number;
+  deltaDia?: number;
+  pendienteDia?: number;
+  deltaNoche?: number;
+  pendienteNoche?: number;
+  relacionDiaNoche?: number;
+  condicion?: "Aceptado" | "Rechazado";
+  hayRaices?: boolean;
+}
+
 export interface IVariablesPrediccionRiego {
+  calculoRaices?: ICalculoRaices[];
   et0Promedio?: number;
   umbralDeRiego?: number;
   aguaUtilFacilmenteDisponiblePotencial?: number;
