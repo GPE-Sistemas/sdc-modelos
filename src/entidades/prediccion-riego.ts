@@ -54,6 +54,10 @@ export interface ICalculoRaices {
   humedadFinDia?: number;
   humedadInicioNoche?: number;
   humedadFinNoche?: number;
+  fechaInicioDia?: string;
+  fechaFinDia?: string;
+  fechaInicioNoche?: string;
+  fechaFinNoche?: string;
   deltaDiario?: number;
   deltaDia?: number;
   pendienteDia?: number;
