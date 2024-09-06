@@ -44,20 +44,32 @@ export interface INivelLecturaSensor {
   humedadSueloLeida?: number;
 }
 
+export interface IPrimerReporteDiaNoche {}
+
 export interface ICalculoRaices {
   profundidad?: number;
   nivel?: number;
   capacidadCampo?: number;
   precipitaciones?: number;
-  humedadMaxima?: number;
-  humedadInicioDia?: number;
-  humedadFinDia?: number;
-  humedadInicioNoche?: number;
-  humedadFinNoche?: number;
-  fechaInicioDia?: string;
-  fechaFinDia?: string;
-  fechaInicioNoche?: string;
-  fechaFinNoche?: string;
+  inicioDia: {
+    fecha: string;
+    humedad: number;
+  };
+  finDia: {
+    fecha: string;
+    humedad: number;
+  };
+  inicioNoche: {
+    fecha: string;
+    humedad: number;
+  };
+  finNoche: {
+    fecha: string;
+    humedad: number;
+  };
+  horasDia: number;
+  horasNoche: number;
+  humedadMaxima: number;
   deltaDiario?: number;
   deltaDia?: number;
   pendienteDia?: number;
