@@ -6,6 +6,7 @@ import { IPermiso } from './usuario';
 export interface IApikey {
   _id?: string;
   //
+  fechaCreacion?: string;
   identificacion?: string;
   key?: string;
   // Permisos
