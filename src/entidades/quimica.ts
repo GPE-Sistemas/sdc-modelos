@@ -1,4 +1,5 @@
-import { IEmpresa } from "./empresa";
+import { IIntegracion } from '../compartidos';
+import { IEmpresa } from './empresa';
 
 export interface IQuimica {
   _id?: string;
@@ -6,12 +7,13 @@ export interface IQuimica {
   logo?: string;
   fechaCreacion?: string;
   idEmpresas?: string[];
+  integraciones?: IIntegracion[];
   //
   empresas?: IEmpresa[];
 }
 
-type OmitirCreate = "_id" | "empresas";
+type OmitirCreate = '_id' | 'empresas';
 export interface ICreateQuimica extends Omit<Partial<IQuimica>, OmitirCreate> {}
 
-type OmitirUpdate = "_id" | "empresas";
+type OmitirUpdate = '_id' | 'empresas';
 export interface IUpdateQuimica extends Omit<Partial<IQuimica>, OmitirUpdate> {}

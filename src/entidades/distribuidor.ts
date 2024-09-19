@@ -1,4 +1,5 @@
-import { IQuimica } from "./quimica";
+import { IIntegracion } from '../compartidos';
+import { IQuimica } from './quimica';
 
 export interface IDistribuidor {
   _id?: string;
@@ -6,14 +7,15 @@ export interface IDistribuidor {
   nombre?: string;
   logo?: string;
   fechaCreacion?: string;
+  integraciones?: IIntegracion[];
   // Populate
   quimica?: IQuimica;
 }
 
-type OmitirCreate = "_id" | "quimica";
+type OmitirCreate = '_id' | 'quimica';
 export interface ICreateDistribuidor
   extends Omit<Partial<IDistribuidor>, OmitirCreate> {}
 
-type OmitirUpdate = "_id" | "quimica";
+type OmitirUpdate = '_id' | 'quimica';
 export interface IUpdateDistribuidor
   extends Omit<Partial<IDistribuidor>, OmitirUpdate> {}
