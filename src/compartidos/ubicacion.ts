@@ -1,7 +1,7 @@
 import { ICoordenadas } from "./coordenadas";
 
 export interface IUbicacion {
-  poligono: ICoordenadas[];
+  poligono?: ICoordenadas[];
   centro?: ICoordenadas;
   nombre?: string;
   superficie?: number;
