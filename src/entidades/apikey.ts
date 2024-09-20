@@ -1,6 +1,3 @@
-import { IDistribuidor } from "./distribuidor";
-import { IProductor } from "./productor";
-import { IQuimica } from "./quimica";
 import { IPermiso } from "./usuario";
 
 export interface IApikey {
@@ -9,7 +6,7 @@ export interface IApikey {
   fechaCreacion?: string;
   identificacion?: string;
   key?: string;
-  permisos?: IPermiso[];
+  permiso?: IPermiso;
 }
 
 type OmitirCreate = "_id" | "productor" | "distribuidor" | "quimica";
