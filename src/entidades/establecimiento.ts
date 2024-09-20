@@ -10,7 +10,7 @@ export interface IEstablecimiento {
   idProductor?: string;
   nombre?: string;
   ubicacion?: IUbicacion[];
-  fechaCreacion: string;
+  fechaCreacion?: string;
   // Populate
   quimica?: IQuimica;
   distribuidor?: IDistribuidor;
