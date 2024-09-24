@@ -1,5 +1,6 @@
 export interface IEstacion {
   _id?: string;
+  origen?: "FieldClimate" | "Chaman";
   // id de field climate
   idExterno?: string;
   user?: string;
