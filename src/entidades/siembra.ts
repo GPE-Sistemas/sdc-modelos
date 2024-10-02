@@ -1,4 +1,4 @@
-import { ICoordenadas } from '../compartidos';
+import { ICoordenadas, IGeoJSONPoint } from '../compartidos';
 import { ICrono } from './crono';
 import { IDepartamento } from './departamento';
 import { IDistribuidor } from './distribuidor';
@@ -23,6 +23,7 @@ export interface ISiembra {
   fechaCosecha?: string;
   activa?: boolean;
   coordenadas?: ICoordenadas;
+  geojson?: IGeoJSONPoint;
   ultimaPrediccion?: IPrediccion;
   // Populate
   quimica?: IQuimica;

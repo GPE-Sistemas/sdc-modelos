@@ -7,3 +7,4 @@ export * from './queryParams';
 export * from './socket-message';
 export * from './ubicacion';
 export * from './integraciones';
+export * from './geojson';
