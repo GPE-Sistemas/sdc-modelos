@@ -11,7 +11,7 @@ export interface IGeoJSONPoint {
 export interface IGeoJSONCircle {
   type: 'Point';
   coordinates?: [number, number];
-  radius: number;
+  radius?: number;
 }
 
 export interface IGeoJSONLineString {
