@@ -5,26 +5,26 @@
 
 export interface IGeoJSONPoint {
   type: 'Point';
-  coordinates: [number, number];
+  coordinates?: [number, number];
 }
 
 export interface IGeoJSONCircle {
   type: 'Point';
-  coordinates: [number, number];
+  coordinates?: [number, number];
   radius: number;
 }
 
 export interface IGeoJSONLineString {
   type: 'LineString';
-  coordinates: [number, number][];
+  coordinates?: [number, number][];
 }
 
 export interface IGeoJSONPolygon {
   type: 'Polygon';
-  coordinates: [[number, number][]];
+  coordinates?: [[number, number][]];
 }
 
 export interface IGeoJSONMultiPolygon {
   type: 'MultiPolygon';
-  coordinates: number[][][][];
+  coordinates?: number[][][][];
 }
