@@ -61,7 +61,14 @@ export interface IPrediccionEstacion {
 
 export interface IPrediccion {
   _id?: string;
+  /**
+   * fecha en formato ISO
+   */
   fecha?: string;
+  /**
+   * fecha en formato 2024-12-31
+   */
+  fechaPrediccion?: string;
   etapa?: number;
   nombreEtapa?: string;
   idSiembra?: string;
