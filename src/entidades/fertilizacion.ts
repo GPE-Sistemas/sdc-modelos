@@ -1,6 +1,7 @@
 import { IDistribuidor } from "./distribuidor";
 import { IEstablecimiento } from "./establecimiento";
 import { IFertilizante } from "./fertilizante";
+import { ILote } from "./lote";
 import { IProductor } from "./productor";
 import { IQuimica } from "./quimica";
 import { ISiembra } from "./siembra";
@@ -21,7 +22,7 @@ export interface IFertilizacion {
   dosisKgHa?: number;
 
   // Populate
-  siembra?: ISiembra;
+  lote?: ILote;
   fertilizante?: IFertilizante;
   quimica?: IQuimica;
   distribuidor?: IDistribuidor;
