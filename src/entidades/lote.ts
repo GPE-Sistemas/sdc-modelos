@@ -6,14 +6,30 @@ import { IEstacion } from "./estacion";
 import { IProductor } from "./productor";
 import { IQuimica } from "./quimica";
 
+export type TTexturaSuelo =
+  | "Arcilloso"
+  | "Franco arcilloso"
+  | "Franco"
+  | "Franco arenoso"
+  | "Arenoso";
+export type TTipoDrenaje =
+  | "Mal Drenado"
+  | "Moderadamente Drenado"
+  | "Bien Drenado"
+  | "Excesivamente Drenado";
+
+export type TTipoErosionEscorrentiaPendiente =
+  | "Baja (0 - 3%)"
+  | "Moderada (3 - 8%)"
+  | "Alta (8 - 15%)"
+  | "Muy Alta (> 15%)";
+export type TTipoContenidoP = "< 12" | "> 12 < 20" | "> 20 < 30" | "> 30";
+
+export type TTipoDepositoN = "< 0.5" | "> 0.5" | "< 1.5" | "> 1.5";
+
 export interface ISuelo {
   profundidad?: number;
-  textura?:
-    | "Arcilloso"
-    | "Franco arcilloso"
-    | "Franco"
-    | "Franco arenoso"
-    | "Arenoso";
+  textura?: TTexturaSuelo;
   hayRaices?: boolean;
   capacidadDeCampo?: number;
   puntoMarchitez?: number;
@@ -36,6 +52,16 @@ export interface ILote {
   idProductor?: string;
   idEstablecimiento?: string;
   idDepartamento?: string;
+
+  // Datos para Huella Hídrica
+  depositoN?: TTipoDepositoN;
+  texturaLixiviacion?: TTexturaSuelo;
+  texturaEscorrentia?: TTexturaSuelo;
+  drenajeNaturalLixiviacion?: TTipoDrenaje;
+  drenajeNaturalEscorrentia?: TTipoDrenaje;
+  erosionEscorrentiaPendiente?: TTipoErosionEscorrentiaPendiente;
+  contenidoP?: TTipoContenidoP;
+
   // Populate
   quimica?: IQuimica;
   distribuidor?: IDistribuidor;

@@ -1,12 +1,11 @@
-import { IAgroquimico } from "./agroquimico";
 import { IDistribuidor } from "./distribuidor";
 import { IEstablecimiento } from "./establecimiento";
-import { IPrincipioActivo } from "./principio-activo";
+import { IFertilizante } from "./fertilizante";
 import { IProductor } from "./productor";
 import { IQuimica } from "./quimica";
 import { ISiembra } from "./siembra";
 
-export interface IFumigacion {
+export interface IFertilizacion {
   _id?: string;
   // Tenant
   idQuimica?: string;
@@ -16,35 +15,30 @@ export interface IFumigacion {
   // Datos Autogenerados
   fechaCreacion?: string;
   // Info de Fumigación
-  fechaFumigacion?: string;
-  idSiembra?: string;
-  idAgroquimico?: string;
-  duracion?: number; // 15 días
-  idPrincipioActivo?: string;
-  concentracion?: number;
-  dosisLtHa?: number;
+  fechaFertilizacion?: string;
+  idLote?: string;
+  idFertilizante?: string;
+  dosisKgHa?: number;
 
   // Populate
   siembra?: ISiembra;
-  agroquimico?: IAgroquimico;
+  fertilizante?: IFertilizante;
   quimica?: IQuimica;
   distribuidor?: IDistribuidor;
   productor?: IProductor;
   establecimiento?: IEstablecimiento;
-  principioActivo?: IPrincipioActivo;
 }
 
 type OmitirCreate =
   | "_id"
   | "siembra"
-  | "agroquimico"
+  | "fertilizante"
   | "quimica"
   | "distribuidor"
   | "productor"
-  | "establecimiento"
-  | "principioActivo";
-export interface ICreateFumigacion
-  extends Omit<Partial<IFumigacion>, OmitirCreate> {}
+  | "establecimiento";
+export interface ICreateFertilizacion
+  extends Omit<Partial<IFertilizacion>, OmitirCreate> {}
 
 type OmitirUpdate =
   | "_id"
@@ -53,7 +47,6 @@ type OmitirUpdate =
   | "quimica"
   | "distribuidor"
   | "productor"
-  | "establecimiento"
-  | "principioActivo";
-export interface IUpdateFumigacion
-  extends Omit<Partial<IFumigacion>, OmitirUpdate> {}
+  | "establecimiento";
+export interface IUpdateFertilizacion
+  extends Omit<Partial<IFertilizacion>, OmitirUpdate> {}
