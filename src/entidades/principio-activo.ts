@@ -2,7 +2,7 @@ export interface IPrincipioActivo {
   _id?: string;
   nombre?: string;
   koc?: number;
-  persistencia?: string;
+  persistencia?: number;
 }
 
 type OmitirCreate = "_id" | "empresa";
