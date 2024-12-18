@@ -20,6 +20,11 @@ export type TTipoIntensidadLluvias =
   | "Intensas"
   | "Muy Intensas";
 export type TTipoMateriaOrganica = "< 1" | "> 1 < 3" | "> 3 < 5" | "> 5";
+export type TTipoLluviaPromedio =
+  | "< 600"
+  | "> 600 < 1200"
+  | "> 1200 < 1800"
+  | "> 1800";
 
 export interface IHuellaHidrica {
   gris?: {
@@ -63,7 +68,7 @@ export interface ISiembra {
   humedadCosecha?: number;
   rendimientoObtenidoKgHa?: number;
   rendimientoObtenidoKgHaSeco?: number;
-  lluviasPromedio?: number;
+  lluviasPromedio?: TTipoLluviaPromedio;
   fijacionN?: TTipoFijacionN;
   dosisN?: TTipoDosisN;
   rendimiento?: TTipoRendimiento;
