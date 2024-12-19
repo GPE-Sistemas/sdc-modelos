@@ -12,6 +12,7 @@ import { ISemilla } from "./semilla";
 
 export type TTipoFijacionN = "0" | "> 0 < 30" | "> 30 < 60" | "> 60";
 export type TTipoDosisN = "Muy Baja" | "Baja" | "Alta" | "Muy Alta";
+export type TTipoDosisP = "Muy Baja" | "Baja" | "Alta" | "Muy Alta";
 export type TTipoRendimiento = "Muy Bajo" | "Bajo" | "Alto" | "Muy Alto";
 export type TTipoManejoAgronomico = "Malo" | "Promedio" | "Bueno" | "Excelente";
 export type TTipoIntensidadLluvias =
@@ -71,6 +72,7 @@ export interface ISiembra {
   lluviasPromedio?: TTipoLluviaPromedio;
   fijacionN?: TTipoFijacionN;
   dosisN?: TTipoDosisN;
+  dosisP?: TTipoDosisP;
   rendimiento?: TTipoRendimiento;
   manejoAgronómico?: TTipoManejoAgronomico;
   intensidadLluvias?: TTipoIntensidadLluvias;
