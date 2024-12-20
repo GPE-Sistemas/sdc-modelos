@@ -5,6 +5,10 @@ import { IDistribuidor } from "./distribuidor";
 import { IEstablecimiento } from "./establecimiento";
 import { ILote } from "./lote";
 import { IPrediccion } from "./prediccion";
+import {
+  IPrediccionRiego,
+  IResultadoPrediccionRiego,
+} from "./prediccion-riego";
 import { IProductor } from "./productor";
 import { IQuimica } from "./quimica";
 import { ISemilla } from "./semilla";
@@ -68,6 +72,7 @@ export interface ISiembra {
   coordenadas?: ICoordenadas;
   geojson?: IGeoJSONPoint;
   ultimaPrediccion?: IPrediccion;
+  ultimaPrediccionRiego?: IResultadoPrediccionRiego;
 
   // Datos para huella hídrica
   humedadCosecha?: number;
