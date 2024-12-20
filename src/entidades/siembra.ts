@@ -72,7 +72,7 @@ export interface ISiembra {
   coordenadas?: ICoordenadas;
   geojson?: IGeoJSONPoint;
   ultimaPrediccion?: IPrediccion;
-  ultimaPrediccionRiego?: IResultadoPrediccionRiego;
+  ultimaPrediccionRiego?: IResultadoPrediccionRiego[];
 
   // Datos para huella hídrica
   humedadCosecha?: number;
