@@ -5,7 +5,6 @@ import { IDistribuidor } from "./distribuidor";
 import { IEstablecimiento } from "./establecimiento";
 import { ILote } from "./lote";
 import { IPrediccion } from "./prediccion";
-import { IPrediccionRiego } from "./prediccion-riego";
 import { IProductor } from "./productor";
 import { IQuimica } from "./quimica";
 import { ISemilla } from "./semilla";
