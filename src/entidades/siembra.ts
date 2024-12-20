@@ -26,6 +26,11 @@ export type TTipoLluviaPromedio =
   | "> 600 < 1200"
   | "> 1200 < 1800"
   | "> 1800";
+export type TTipoLabranza =
+  | "Siembra Directa"
+  | "Convencional"
+  | "Labranza"
+  | "Reducida";
 
 export interface IHuellaHidrica {
   gris?: {
@@ -73,6 +78,7 @@ export interface ISiembra {
   fijacionN?: TTipoFijacionN;
   dosisN?: TTipoDosisN;
   dosisP?: TTipoDosisP;
+  labranza?: TTipoLabranza;
   rendimiento?: TTipoRendimiento;
   manejoAgronómico?: TTipoManejoAgronomico;
   intensidadLluvias?: TTipoIntensidadLluvias;
