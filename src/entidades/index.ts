@@ -1,4 +1,5 @@
 export * from "./agroquimico";
+export * from "./clima";
 export * from "./crono";
 export * from "./departamento";
 export * from "./distribuidor";
