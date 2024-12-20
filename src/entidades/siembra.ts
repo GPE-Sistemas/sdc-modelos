@@ -79,7 +79,7 @@ export interface ISiembra {
   dosisP?: TTipoDosisP;
   labranza?: TTipoLabranza;
   rendimiento?: TTipoRendimiento;
-  manejoAgronómico?: TTipoManejoAgronomico;
+  manejoAgronomico?: TTipoManejoAgronomico;
   intensidadLluvias?: TTipoIntensidadLluvias;
   materiaOrganica?: TTipoMateriaOrganica;
   huellaHidrica?: IHuellaHidrica;
