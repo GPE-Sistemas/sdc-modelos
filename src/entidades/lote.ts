@@ -5,6 +5,7 @@ import { IEstablecimiento } from "./establecimiento";
 import { IEstacion } from "./estacion";
 import { IProductor } from "./productor";
 import { IQuimica } from "./quimica";
+import { IHuellaHidrica } from "./siembra";
 
 export type TTexturaSuelo =
   | "Arcilloso"
@@ -52,7 +53,6 @@ export interface ILote {
   idProductor?: string;
   idEstablecimiento?: string;
   idDepartamento?: string;
-
   // Datos para Huella Hídrica
   depositoN?: TTipoDepositoN;
   texturaLixiviacion?: TTexturaSuelo;
@@ -61,7 +61,8 @@ export interface ILote {
   drenajeNaturalEscorrentia?: TTipoDrenaje;
   erosionEscorrentiaPendiente?: TTipoErosionEscorrentiaPendiente;
   contenidoP?: TTipoContenidoP;
-
+  // Huella hidrica de la ultima siembra del lote
+  huellaHidrica?: IHuellaHidrica;
   // Populate
   quimica?: IQuimica;
   distribuidor?: IDistribuidor;
