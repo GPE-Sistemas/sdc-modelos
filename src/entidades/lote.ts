@@ -5,7 +5,7 @@ import { IEstablecimiento } from "./establecimiento";
 import { IEstacion } from "./estacion";
 import { IProductor } from "./productor";
 import { IQuimica } from "./quimica";
-import { IHuellaHidrica } from "./siembra";
+import { IHuellaHidrica, ISiembra } from "./siembra";
 
 export type TTexturaSuelo =
   | "Arcilloso"
@@ -63,6 +63,8 @@ export interface ILote {
   contenidoP?: TTipoContenidoP;
   // Huella hidrica de la ultima siembra del lote
   huellaHidrica?: IHuellaHidrica;
+  // Id de la ultima siembra del lote
+  idSiembra?: string;
   // Populate
   quimica?: IQuimica;
   distribuidor?: IDistribuidor;
@@ -70,6 +72,7 @@ export interface ILote {
   establecimiento?: IEstablecimiento;
   departamento?: IDepartamento;
   sondaSuelo?: IEstacion;
+  siembra?: ISiembra;
 }
 
 type OmitirCreate =
