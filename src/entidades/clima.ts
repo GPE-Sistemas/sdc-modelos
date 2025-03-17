@@ -52,3 +52,19 @@ export interface IPronosticoEstacionMeteorologica {
   radiacionSolar?: number;
   et0?: number;
 }
+
+export interface IPronosticoMeteoSource {
+  fuente?: FuenteClima; // MeteoSource
+  fecha?: string;
+  ubicacion?: ICoordenadas;
+  //
+  temperatura?: IValores;
+  humedad?: IValores;
+  velocidadViento?: IValores;
+
+  lluvia?: number;
+  probabilidadLluvia?: number;
+  direccionViento?: number;
+  radiacionSolar?: number;
+  et0?: number;
+}
