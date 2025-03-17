@@ -1,7 +1,9 @@
+import { Module } from './omixom';
+
 export interface IEstacion {
   _id?: string;
-  origen?: "FieldClimate" | "Chaman";
-  // id de field climate
+  origen?: 'FieldClimate' | 'Chaman' | 'Omixom';
+  // id de field climate o Omixom
   idExterno?: string;
   user?: string;
   pass?: string;
@@ -58,12 +60,13 @@ export interface IEstacion {
     };
     volumetricAverage: number; // 0;
   };
+  modules?: Module[];
 }
 
-type OmitirCreate = "_id";
+type OmitirCreate = '_id';
 export interface ICreateEstacion
   extends Omit<Partial<IEstacion>, OmitirCreate> {}
 
-type OmitirUpdate = "_id";
+type OmitirUpdate = '_id';
 export interface IUpdateEstacion
   extends Omit<Partial<IEstacion>, OmitirUpdate> {}
