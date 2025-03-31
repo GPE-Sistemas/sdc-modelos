@@ -1,10 +1,12 @@
 import { IUbicacion } from '../compartidos/ubicacion';
+import { Cultivo } from './crono';
 import { IDepartamento } from './departamento';
 import { IDistribuidor } from './distribuidor';
 import { IEstablecimiento } from './establecimiento';
 import { IEstacion } from './estacion';
 import { IProductor } from './productor';
 import { IQuimica } from './quimica';
+import { TEnfermedad } from './semilla';
 import { IHuellaHidrica, ISiembra } from './siembra';
 
 export type TTexturaSuelo =
@@ -37,9 +39,27 @@ export interface ISuelo {
   numeroDeSensor?: number;
 }
 
+export interface nivelPrediccion {
+  cultivo?: Cultivo; // Soja - Trigo - Maiz
+  enfermedad?: TEnfermedad; // Enfermedad a predecir
+  temperatura?: calidadNivel;
+  humedadRelativa?: calidadNivel;
+  velocidadViento?: calidadNivel;
+  lluvias?: calidadNivel;
+  nivel?: number; // Nivel general (el peor de los de arriba)
+}
+
+export interface calidadNivel {
+  nivel?: number; // 1 - Excelente, 2 - Bueno, 3 - Malo
+  distancia?: number; // Distancia a la estación en km
+  idEstacion?: string; // Id de la estación
+  // Populate
+  estacion?: IEstacion;
+}
+
 export interface ICalidadClima {
   fecha?: string;
-  nivel?: number; // 1 - Excelente, 2 - Bueno, 3 - Malo
+  nivelPrediccion?: nivelPrediccion[];
 }
 
 export interface ILote {
