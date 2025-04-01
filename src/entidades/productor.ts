@@ -6,6 +6,7 @@ export interface IProductor {
   _id?: string;
   idQuimica?: string;
   idDistribuidor?: string;
+  gratis?: boolean;
   nombre?: string;
   logo?: string;
   fechaCreacion?: string;
