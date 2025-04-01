@@ -1,15 +1,15 @@
-import { IDistribuidor } from "./distribuidor";
-import { IEstablecimiento } from "./establecimiento";
-import { IProductor } from "./productor";
-import { IQuimica } from "./quimica";
+import { IDistribuidor } from './distribuidor';
+import { IEstablecimiento } from './establecimiento';
+import { IProductor } from './productor';
+import { IQuimica } from './quimica';
 
 export type NivelPermiso =
-  | "Admin"
-  | "Quimica"
-  | "Distribuidor"
-  | "Productor"
-  | "Establecimiento";
-export type Rol = "Admin" | "Lectura" | "Escritura";
+  | 'Admin'
+  | 'Quimica'
+  | 'Distribuidor'
+  | 'Productor'
+  | 'Establecimiento';
+export type Rol = 'Admin' | 'Lectura' | 'Escritura';
 
 export interface IPermiso {
   nivel: NivelPermiso;
@@ -38,15 +38,16 @@ export interface IUsuario {
   username?: string;
   hash?: string;
   permisos?: IPermiso[];
+  email?: string;
   datosPersonales?: IDatosPersonales;
 }
 
-type OmitirCreate = "_id";
+type OmitirCreate = '_id';
 export interface ICreateUsuario extends Omit<Partial<IUsuario>, OmitirCreate> {
   password?: string;
 }
 
-type OmitirUpdate = "_id";
+type OmitirUpdate = '_id';
 export interface IUpdateUsuario extends Omit<Partial<IUsuario>, OmitirUpdate> {
   password?: string;
 }
