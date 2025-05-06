@@ -25,3 +25,4 @@ export * from './usuario';
 export * from './alerta';
 export * from './apikey';
 export * from './omixom';
+export * from './reporte-ndvi';
