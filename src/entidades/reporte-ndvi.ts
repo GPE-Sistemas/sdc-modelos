@@ -1,3 +1,4 @@
+import { IGeoJSONPoint } from '../compartidos';
 import { IDepartamento } from './departamento';
 import { IDistribuidor } from './distribuidor';
 import { IEstablecimiento } from './establecimiento';
@@ -6,15 +7,10 @@ import { IProductor } from './productor';
 import { IQuimica } from './quimica';
 
 export interface IMetadata {
-  bounds?: {
-    west?: number;
-    south?: number;
-    east?: number;
-    north?: number;
-  };
-  width?: number;
-  height?: number;
-  crs?: string;
+  geojson: IGeoJSONPoint;
+  width: number;
+  height: number;
+  crs: string;
 }
 
 export interface IReporteNDVIExterno {
