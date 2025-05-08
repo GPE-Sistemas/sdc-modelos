@@ -19,7 +19,7 @@ export interface IReporteNDVIExterno {
   ndvi_promedio?: number;
   metadata?: IMetadata;
   fecha?: string;
-  fechafecha_imagen?: string;
+  fecha_imagen?: string;
 }
 
 export interface IReporteNDVI {
@@ -27,6 +27,7 @@ export interface IReporteNDVI {
   //
   fechaCreacion?: string;
   fechaDelReporte?: string;
+  fechaDeLaImagen?: string;
   ndviPromedio?: number;
   ndviUrl?: string;
   // Esto sirve para ubicar la imagen en el mapa
