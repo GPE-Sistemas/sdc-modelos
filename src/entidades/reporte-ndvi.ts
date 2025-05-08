@@ -19,6 +19,7 @@ export interface IReporteNDVIExterno {
   ndvi_promedio?: number;
   metadata?: IMetadata;
   fecha?: string;
+  fechafecha_imagen?: string;
 }
 
 export interface IReporteNDVI {
