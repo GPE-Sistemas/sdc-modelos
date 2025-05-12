@@ -1,4 +1,4 @@
-import { IGeoJSONPoint } from '../compartidos';
+import { IGeoJSONPoint, IGeoJSONPolygon } from '../compartidos';
 import { IDepartamento } from './departamento';
 import { IDistribuidor } from './distribuidor';
 import { IEstablecimiento } from './establecimiento';
@@ -7,7 +7,7 @@ import { IProductor } from './productor';
 import { IQuimica } from './quimica';
 
 export interface IMetadata {
-  geojson: IGeoJSONPoint;
+  geojson: IGeoJSONPolygon;
   width: number;
   height: number;
   crs: string;
