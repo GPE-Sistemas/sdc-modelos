@@ -12,7 +12,10 @@ export interface IEstablecimiento {
   nombre?: string;
   ubicacion?: IUbicacion[];
   fechaCreacion?: string;
-  pronostico?: IPronosticoEstacionMeteorologica;
+  prediccionClimatica?: {
+    fecha?: string;
+    pronosticos?: IPronosticoEstacionMeteorologica[];
+  };
   // Populate
   quimica?: IQuimica;
   distribuidor?: IDistribuidor;
