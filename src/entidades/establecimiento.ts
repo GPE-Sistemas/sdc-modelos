@@ -1,7 +1,6 @@
 import { IUbicacion } from '../compartidos/ubicacion';
 import { IPronosticoEstacionMeteorologica } from './clima';
 import { IDistribuidor } from './distribuidor';
-import { IPrediccion } from './prediccion';
 import { IProductor } from './productor';
 import { IQuimica } from './quimica';
 
