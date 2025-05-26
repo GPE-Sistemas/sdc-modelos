@@ -60,6 +60,7 @@ export interface calidadNivel {
 export interface ICalidadClima {
   fecha?: string;
   nivelPrediccion?: nivelPrediccion[];
+  nivel?: number; // Nivel general (el peor de los de arriba)
 }
 
 export interface ILote {
