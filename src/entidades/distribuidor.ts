@@ -15,8 +15,9 @@ export interface IDistribuidor {
 
 type OmitirCreate = '_id' | 'quimica';
 export interface ICreateDistribuidor
-  extends Omit<Partial<IDistribuidor>, OmitirCreate>,
-    ICreateLicencia {}
+  extends Omit<Partial<IDistribuidor>, OmitirCreate> {
+  licencia?: ICreateLicencia;
+}
 
 type OmitirUpdate = '_id' | 'quimica';
 export interface IUpdateDistribuidor
