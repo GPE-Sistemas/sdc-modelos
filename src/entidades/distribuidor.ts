@@ -17,6 +17,7 @@ type OmitirCreate = '_id' | 'quimica';
 export interface ICreateDistribuidor
   extends Omit<Partial<IDistribuidor>, OmitirCreate> {
   licencia?: ICreateLicencia;
+  expiracion?: number; // CANTIDAD DE DIAS
 }
 
 type OmitirUpdate = '_id' | 'quimica';
