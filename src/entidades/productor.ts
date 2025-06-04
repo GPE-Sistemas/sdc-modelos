@@ -1,5 +1,6 @@
 import { IIntegracion } from '../compartidos';
 import { IDistribuidor } from './distribuidor';
+import { ICreateLicencia } from './licencia';
 import { IQuimica } from './quimica';
 
 export interface IProductor {
@@ -18,7 +19,8 @@ export interface IProductor {
 
 type OmitirCreate = '_id' | 'quimica' | 'distribuidor';
 export interface ICreateProductor
-  extends Omit<Partial<IProductor>, OmitirCreate> {}
+  extends Omit<Partial<IProductor>, OmitirCreate>,
+    ICreateLicencia {}
 
 type OmitirUpdate = '_id' | 'quimica' | 'distribuidor';
 export interface IUpdateProductor
