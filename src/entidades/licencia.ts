@@ -14,17 +14,19 @@ export interface ILicencia {
   modulos?: {
     Enfermedades?: boolean;
     Riego?: boolean;
-    "Huella Hídrica"?: boolean;
+    'Huella Hídrica'?: boolean;
     NDVI?: boolean;
     Clima?: boolean;
-    "Etapas Fenológicas"?: boolean;
+    'Etapas Fenológicas'?: boolean;
   };
+
+  default?: boolean; // Indica si es la licencia por defecto y solo puede haber una. (La gratis)
 }
 
-type OmitirCreate = "_id";
+type OmitirCreate = '_id';
 export interface ICreateLicencia
   extends Omit<Partial<ILicencia>, OmitirCreate> {}
 
-type OmitirUpdate = "_id";
+type OmitirUpdate = '_id' | 'default';
 export interface IUpdateLicencia
   extends Omit<Partial<ILicencia>, OmitirUpdate> {}
