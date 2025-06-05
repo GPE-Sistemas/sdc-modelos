@@ -20,4 +20,7 @@ export interface ICreateQuimica extends Omit<Partial<IQuimica>, OmitirCreate> {
 }
 
 type OmitirUpdate = '_id' | 'empresas';
-export interface IUpdateQuimica extends Omit<Partial<IQuimica>, OmitirUpdate> {}
+export interface IUpdateQuimica extends Omit<Partial<IQuimica>, OmitirUpdate> {
+  licencia?: ICreateLicencia;
+  expiracion?: number; // CANTIDAD DE DIAS
+}
