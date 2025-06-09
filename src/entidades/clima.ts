@@ -1,6 +1,6 @@
-import { ICoordenadas } from '../compartidos';
+import { ICoordenadas } from "../compartidos";
 
-export type FuenteClima = 'OpenWeather' | 'FieldClimate' | 'MeteoSource';
+export type FuenteClima = "OpenWeather" | "FieldClimate" | "MeteoSource";
 export interface IValores {
   avg?: number;
   min?: number;
@@ -13,8 +13,9 @@ export interface IValores {
 
 export interface IClimaEstacionMeteorologica {
   fuente?: FuenteClima;
+  icon?: string;
   fecha?: string;
-  diaNoche?: 'Día' | 'Noche';
+  diaNoche?: "Día" | "Noche";
   estacion?: string;
   ubicacion?: ICoordenadas;
   distancia?: number;
@@ -37,7 +38,7 @@ export interface IClimaEstacionMeteorologica {
 export interface IPronosticoEstacionMeteorologica {
   fuente?: FuenteClima;
   fecha?: string;
-  diaNoche?: 'Día' | 'Noche';
+  diaNoche?: "Día" | "Noche";
   estacion?: string;
   ubicacion?: ICoordenadas;
   distancia?: number;
