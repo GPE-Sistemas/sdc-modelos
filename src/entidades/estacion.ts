@@ -2,11 +2,12 @@ import { Module } from './omixom';
 
 export interface IEstacion {
   _id?: string;
-  origen?: 'FieldClimate' | 'Chaman' | 'Omixom';
+  origen?: 'FieldClimate' | 'Chaman' | 'Omixom' | 'Horatech';
   // id de field climate o Omixom
   idExterno?: string;
   user?: string;
   pass?: string;
+  apikey?: string;
   //
   name?: {
     original: string; // "0020B01B"
