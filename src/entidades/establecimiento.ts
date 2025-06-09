@@ -21,7 +21,7 @@ export interface IEstablecimiento {
   };
   climaActual?: {
     fecha?: string;
-    pronosticos?: IClimaEstacionMeteorologica;
+    clima?: IClimaEstacionMeteorologica;
   };
   // Populate
   quimica?: IQuimica;
