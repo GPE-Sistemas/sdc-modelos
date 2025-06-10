@@ -14,6 +14,8 @@ export interface IValores {
 export interface IClimaEstacionMeteorologica {
   fuente?: FuenteClima;
   icon?: string;
+  iconNum?: number;
+  summary?: string;
   fecha?: string;
   diaNoche?: "Día" | "Noche";
   estacion?: string;
