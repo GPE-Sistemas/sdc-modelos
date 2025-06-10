@@ -27,6 +27,7 @@ export interface IClimaEstacionMeteorologica {
   velocidadViento?: IValores;
   direccionViento?: IValores;
   intensidadLuminica?: IValores;
+  probabilidadLluvia?: number;
   lluvia?: IValores;
   radiacionSolar?: IValores;
   humedadSuelo?: { [nivel: number]: IValores };
