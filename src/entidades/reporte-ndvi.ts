@@ -31,6 +31,7 @@ export interface IReporteNDVI {
   fechaDeLaImagen?: string;
   ndviPromedio?: number;
   ndviUrl?: string;
+  coleccion?: string; // Nombre de la coleccion satelital de la imagen
   // Esto sirve para ubicar la imagen en el mapa
   metadataImagen?: IMetadata;
   idLote?: string;
