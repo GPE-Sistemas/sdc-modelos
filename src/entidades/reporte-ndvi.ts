@@ -20,6 +20,7 @@ export interface IReporteNDVIExterno {
   metadata?: IMetadata;
   fecha?: string;
   fechaImagen?: string;
+  coleccion?: string;
 }
 
 export interface IReporteNDVI {
