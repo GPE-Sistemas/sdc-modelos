@@ -10,6 +10,7 @@ export type Sensores =
   | 'presion'
   | 'evapotranspiracion'
   | 'radiacion_solar'
+  | 'napa' // Freatimetro
   | 'otro'; // Sensores que no sé que son
 
 export interface IEstacion {
