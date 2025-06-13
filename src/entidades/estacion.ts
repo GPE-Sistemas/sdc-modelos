@@ -1,4 +1,16 @@
-import { Module } from './omixom';
+export type Sensores =
+  | 'temperatura'
+  | 'temperatura_suelo'
+  | 'humedad'
+  | 'humedad_suelo_superficial' // SHS Pinche ahí nomás
+  | 'humedad_suelo_profundidad' // LANZA Muchos valores
+  | 'viento_velocidad'
+  | 'viento_direccion'
+  | 'pluviometro' // Lluvia en general
+  | 'presion'
+  | 'evapotranspiracion'
+  | 'radiacion_solar'
+  | 'otro'; // Sensores que no sé que son
 
 export interface IEstacion {
   _id?: string;
@@ -39,29 +51,10 @@ export interface IEstacion {
     measure_time: number; // 0;
     timezoneCode: string; // "America/Argentina/Buenos_Aires"
   };
-  meta?: {
-    time: number; // 1656583200;
-    solarRadiation: number; // 270;
-    soilTemp: number; // 6.8;
-    solarPanel: number; // 10237;
-    battery: number; // 6787;
-    airTemp: number; // 7.8;
-    rh: number; // 99.99;
-    rain7d: {
-      vals: number[]; // [0, 0, 0, 0, 0, 0, 0]
-      sum: number; // 0
-    };
-    rain48h: {
-      vals: number[]; // [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
-      sum: number; // 0
-    };
-    rain24h: {
-      vals: number[]; // [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
-      sum: number; // 0
-    };
-    volumetricAverage: number; // 0;
-  };
-  modules?: Module[];
+  /**
+   * Sensores que tiene la estación - Cambia según el origen
+   */
+  sensores?: Sensores[]; // ["temperatura", "humedad", "viento", "radiacion"]
 }
 
 type OmitirCreate = '_id';
