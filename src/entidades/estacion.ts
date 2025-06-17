@@ -1,3 +1,5 @@
+import { Module } from './omixom';
+
 export type Sensores =
   | 'temperatura'
   | 'temperatura_suelo'
@@ -56,6 +58,11 @@ export interface IEstacion {
    * Sensores que tiene la estación - Cambia según el origen
    */
   sensores?: Sensores[]; // ["temperatura", "humedad", "viento", "radiacion"]
+  /**
+   * Modulos que tiene la estación - solo para Omixom
+   * Está porque reportan con el id en lugar de un nombre legible.
+   */
+  modulos?: Module[];
 }
 
 type OmitirCreate = '_id';
