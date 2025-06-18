@@ -40,6 +40,7 @@ export interface IClimaEstacionMeteorologica {
   panelSolar?: IValores;
   bateria?: IValores;
   rafagaViento?: IValores;
+  nivelDeAgua?: IValores; // Freatímetro
   et0?: IValores;
 }
 
