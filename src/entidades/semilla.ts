@@ -1,16 +1,17 @@
-import { Cultivo } from "./crono";
+import { Cultivo } from './crono';
 
 export type TEnfermedad =
   // Trigo
-  | "Fusarium de la Espiga"
-  | "Mancha Amarilla"
-  | "Mancha de la Hoja"
-  | "Roya de la Hoja"
-  | "Roya del Tallo"
+  | 'Fusarium de la Espiga'
+  | 'Mancha Amarilla'
+  | 'Mancha de la Hoja'
+  | 'Roya de la Hoja'
+  | 'Roya del Tallo'
+  | 'Roya Anaranjada'
   // Soja
-  | "Fin de Ciclo"
+  | 'Fin de Ciclo'
   // Maiz
-  | "Roya del Maiz";
+  | 'Roya del Maiz';
 
 export interface IResistencia {
   multiplicador?: number;
@@ -27,8 +28,8 @@ export interface ISemilla {
   campania?: string;
 }
 
-type OmitirCreate = "_id";
+type OmitirCreate = '_id';
 export interface ICreateSemilla extends Omit<Partial<ISemilla>, OmitirCreate> {}
 
-type OmitirUpdate = "_id";
+type OmitirUpdate = '_id';
 export interface IUpdateSemilla extends Omit<Partial<ISemilla>, OmitirUpdate> {}
