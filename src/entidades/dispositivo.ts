@@ -3,13 +3,19 @@ import { IDistribuidor } from './distribuidor';
 import { Sensores } from './estacion';
 import { IProductor } from './productor';
 import { IQuimica } from './quimica';
-import { SensoresV2 } from './reporte';
+import { IReporte, SensoresV2 } from './reporte';
 
 export interface IMetaDataLora {
   ubicacionGW?: IGeoJSONPoint;
   snr?: number; // Signal to Noise Ratio
   rssi?: number; // Received Signal Strength Indicator
   dr?: number; // Data Rate
+}
+
+export interface IBateria {
+  valor?: number;
+  unidad?: string;
+  fecha?: string; // Fecha de la medición
 }
 
 export type TipoDispositivo =
@@ -36,6 +42,10 @@ export interface IDispositivo {
   // Datos de Carga
   geojson?: IGeoJSONPoint;
   nombre?: string;
+  // Reportes
+  bateria?: IBateria;
+  ultimoReporte?: IReporte;
+  fechaUltimaComunicacion?: string; // Puede ser de otra copsa que no sea un reporte.
 
   // Populate
   quimica?: IQuimica;
