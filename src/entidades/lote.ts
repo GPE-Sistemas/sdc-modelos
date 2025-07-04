@@ -1,6 +1,7 @@
 import { IUbicacion } from '../compartidos/ubicacion';
 import { Cultivo } from './crono';
 import { IDepartamento } from './departamento';
+import { IDispositivo } from './dispositivo';
 import { IDistribuidor } from './distribuidor';
 import { IEstablecimiento } from './establecimiento';
 import { IEstacion } from './estacion';
@@ -79,6 +80,7 @@ export interface ILote {
   idProductor?: string;
   idEstablecimiento?: string;
   idDepartamento?: string;
+  idsDispositivo?: string[]; // Dispositivos asociados al lote
   // Datos para Huella Hídrica
   depositoN?: TTipoDepositoN;
   texturaLixiviacion?: TTexturaSuelo;
@@ -100,6 +102,7 @@ export interface ILote {
   departamento?: IDepartamento;
   sondaSuelo?: IEstacion;
   siembra?: ISiembra;
+  dispositivos?: IDispositivo[];
 }
 
 type OmitirCreate =
@@ -109,7 +112,8 @@ type OmitirCreate =
   | 'productor'
   | 'establecimiento'
   | 'departamento'
-  | 'sondaSuelo';
+  | 'sondaSuelo'
+  | 'dispositivos';
 export interface ICreateLote extends Omit<Partial<ILote>, OmitirCreate> {}
 
 type OmitirUpdate =
@@ -119,5 +123,6 @@ type OmitirUpdate =
   | 'productor'
   | 'establecimiento'
   | 'departamento'
-  | 'sondaSuelo';
+  | 'sondaSuelo'
+  | 'dispositivos';
 export interface IUpdateLote extends Omit<Partial<ILote>, OmitirUpdate> {}
