@@ -40,7 +40,7 @@ export interface IReporte {
   deveui?: string;
   fechaCreacion?: string; // Cuando me llega
   fecha?: string; // Fecha del reporte
-  estado: 'parcial' | 'completo'; // Para los partidos como la lanza de 12
+  estado?: 'parcial' | 'completo'; // Para los partidos como la lanza de 12
   datos?: IValoresV2;
   metadataLora?: IMetaDataLora;
 
