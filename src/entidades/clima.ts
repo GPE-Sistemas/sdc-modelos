@@ -5,7 +5,8 @@ export type FuenteClima =
   | 'FieldClimate'
   | 'MeteoSource'
   | 'Omixom'
-  | 'Horatech';
+  | 'Horatech'
+  | 'Dispositivo';
 export interface IValores {
   avg?: number;
   min?: number;
