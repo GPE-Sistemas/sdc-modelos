@@ -1,4 +1,4 @@
-import { IIntegracion } from '../compartidos';
+import { IGeoJSONPoint, IIntegracion, IUbicacion } from '../compartidos';
 import { ICreateLicencia } from './licencia';
 import { IQuimica } from './quimica';
 
@@ -9,6 +9,8 @@ export interface IDistribuidor {
   logo?: string;
   fechaCreacion?: string;
   integraciones?: IIntegracion[];
+  geojson?: IGeoJSONPoint;
+  direccion?: string;
   // Populate
   quimica?: IQuimica;
 }
