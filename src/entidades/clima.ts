@@ -87,24 +87,23 @@ export interface IPronosticoMeteoSource {
 /**
  * Variables climáticas disponibles para tiles de Meteosource
  */
-export enum WeatherVariable {
-  TEMPERATURE = "temperature",
-  PRECIPITATION = "precipitation",
-  CLOUDS = "clouds",
-  WIND_SPEED = "wind_speed",
-  HUMIDITY = "humidity",
-  PRESSURE = "pressure",
-  VISIBILITY = "visibility",
-  GUST = "gust",
-  WIND_DIRECTION = "wind_direction",
-  UV_INDEX = "uv_index",
-  DEW_POINT = "dew_point",
-  SUNSHINE = "sunshine",
-  GLOBAL_RADIATION = "global_radiation",
-  DIFFUSE_RADIATION = "diffuse_radiation",
-  CAPE = "cape",
-  LIFTED_INDEX = "lifted_index",
-}
+export type WeatherVariable =
+  | "temperature"
+  | "precipitation"
+  | "clouds"
+  | "wind_speed"
+  | "humidity"
+  | "pressure"
+  | "visibility"
+  | "gust"
+  | "wind_direction"
+  | "uv_index"
+  | "dew_point"
+  | "sunshine"
+  | "global_radiation"
+  | "diffuse_radiation"
+  | "cape"
+  | "lifted_index";
 
 /**
  * Metadatos de una variable climática para tiles
@@ -175,97 +174,97 @@ export const WEATHER_VARIABLES_METADATA: Record<
   WeatherVariable,
   WeatherVariableMetadata
 > = {
-  [WeatherVariable.TEMPERATURE]: {
+  temperature: {
     name: "Temperatura",
     unit: "°C",
     description: "Temperatura del aire a 2 metros de altura",
     colorScale: "temperature",
   },
-  [WeatherVariable.PRECIPITATION]: {
+  precipitation: {
     name: "Precipitación",
     unit: "mm",
     description: "Precipitación acumulada",
     colorScale: "precipitation",
   },
-  [WeatherVariable.CLOUDS]: {
+  clouds: {
     name: "Nubosidad",
     unit: "%",
     description: "Cobertura de nubes total",
     colorScale: "clouds",
   },
-  [WeatherVariable.WIND_SPEED]: {
+  wind_speed: {
     name: "Velocidad del viento",
     unit: "m/s",
     description: "Velocidad del viento a 10 metros de altura",
     colorScale: "wind",
   },
-  [WeatherVariable.HUMIDITY]: {
+  humidity: {
     name: "Humedad relativa",
     unit: "%",
     description: "Humedad relativa del aire",
     colorScale: "humidity",
   },
-  [WeatherVariable.PRESSURE]: {
+  pressure: {
     name: "Presión atmosférica",
     unit: "hPa",
     description: "Presión atmosférica a nivel del mar",
     colorScale: "pressure",
   },
-  [WeatherVariable.VISIBILITY]: {
+  visibility: {
     name: "Visibilidad",
     unit: "km",
     description: "Visibilidad horizontal",
     colorScale: "visibility",
   },
-  [WeatherVariable.GUST]: {
+  gust: {
     name: "Ráfagas de viento",
     unit: "m/s",
     description: "Velocidad máxima de ráfagas de viento",
     colorScale: "wind",
   },
-  [WeatherVariable.WIND_DIRECTION]: {
+  wind_direction: {
     name: "Dirección del viento",
     unit: "°",
     description: "Dirección del viento en grados (0° = Norte)",
     colorScale: "wind_direction",
   },
-  [WeatherVariable.UV_INDEX]: {
+  uv_index: {
     name: "Índice UV",
     unit: "",
     description: "Índice de radiación ultravioleta",
     colorScale: "uv",
   },
-  [WeatherVariable.DEW_POINT]: {
+  dew_point: {
     name: "Punto de rocío",
     unit: "°C",
     description: "Temperatura del punto de rocío",
     colorScale: "temperature",
   },
-  [WeatherVariable.SUNSHINE]: {
+  sunshine: {
     name: "Duración del sol",
     unit: "min",
     description: "Duración de la luz solar directa",
     colorScale: "sunshine",
   },
-  [WeatherVariable.GLOBAL_RADIATION]: {
+  global_radiation: {
     name: "Radiación global",
     unit: "W/m²",
     description: "Radiación solar global",
     colorScale: "radiation",
   },
-  [WeatherVariable.DIFFUSE_RADIATION]: {
+  diffuse_radiation: {
     name: "Radiación difusa",
     unit: "W/m²",
     description: "Radiación solar difusa",
     colorScale: "radiation",
   },
-  [WeatherVariable.CAPE]: {
+  cape: {
     name: "CAPE",
     unit: "J/kg",
     description: "Energía potencial convectiva disponible",
     colorScale: "cape",
   },
-  [WeatherVariable.LIFTED_INDEX]: {
+  lifted_index: {
     name: "Índice de elevación",
     unit: "°C",
     description: "Índice de estabilidad atmosférica",
