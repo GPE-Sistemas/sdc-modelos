@@ -3,6 +3,7 @@
   "packageManager": "yarn@4.6.0",
   "version": "1.1.0",
   "description": "Modelos para Chamán",
+  "main": "src/index.ts",
   "author": "GPE Sistemas",
   "license": "Private",
   "repository": "https://github.com/GPE-Sistemas/sdc-modelos"
