@@ -166,3 +166,36 @@ export interface TileResponse {
   /** Timestamp de cuando se generó la respuesta */
   generatedAt: string;
 }
+
+/**
+ * Respuesta de debug para tiles climáticos
+ */
+export interface TileDebugResponse {
+  /** Mensaje descriptivo */
+  message: string;
+  /** Variable climática solicitada */
+  variable: WeatherVariable;
+  /** Momento temporal solicitado */
+  datetime: string;
+  /** Nivel de zoom */
+  zoom: number;
+  /** Número de establecimientos del usuario */
+  establecimientos: number;
+  /** Bounding box calculado de los establecimientos */
+  bounds?: {
+    minLat: number;
+    maxLat: number;
+    minLng: number;
+    maxLng: number;
+  };
+  /** Lista de tiles que se descargarían */
+  tiles: Array<{ x: number; y: number; z: number }>;
+  /** Total de tiles a descargar */
+  totalTiles: number;
+  /** Información resumida de establecimientos */
+  establecimientosData?: Array<{
+    _id?: string;
+    nombre?: string;
+    ubicacionCount: number;
+  }>;
+}
