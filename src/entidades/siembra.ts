@@ -73,6 +73,7 @@ export interface ISiembra {
   geojson?: IGeoJSONPoint;
   ultimaPrediccion?: IPrediccion;
   ultimaPrediccionRiego?: IResultadoPrediccionRiego[];
+  aguaUtilReal?: number;
 
   // Datos para huella hídrica
   humedadCosecha?: number;
