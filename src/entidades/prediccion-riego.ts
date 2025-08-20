@@ -31,6 +31,7 @@ export interface INivelCapacidadCampo {
 export interface IResultadoPrediccionRiego {
   fecha?: string;
   cantidad?: number;
+  aguaUtilReal?: number;
 }
 
 export interface INivelLecturaSensor {
