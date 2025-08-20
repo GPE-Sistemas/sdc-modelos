@@ -1,35 +1,35 @@
-import { IUbicacion } from '../compartidos/ubicacion';
-import { Cultivo } from './crono';
-import { IDepartamento } from './departamento';
-import { IDispositivo } from './dispositivo';
-import { IDistribuidor } from './distribuidor';
-import { IEstablecimiento } from './establecimiento';
-import { IEstacion } from './estacion';
-import { IProductor } from './productor';
-import { IQuimica } from './quimica';
-import { TEnfermedad } from './semilla';
-import { IHuellaHidrica, ISiembra } from './siembra';
+import { IUbicacion } from "../compartidos/ubicacion";
+import { Cultivo } from "./crono";
+import { IDepartamento } from "./departamento";
+import { IDispositivo } from "./dispositivo";
+import { IDistribuidor } from "./distribuidor";
+import { IEstablecimiento } from "./establecimiento";
+import { IEstacion } from "./estacion";
+import { IProductor } from "./productor";
+import { IQuimica } from "./quimica";
+import { TEnfermedad } from "./semilla";
+import { IHuellaHidrica, ISiembra } from "./siembra";
 
 export type TTexturaSuelo =
-  | 'Arcilloso'
-  | 'Franco arcilloso'
-  | 'Franco'
-  | 'Franco arenoso'
-  | 'Arenoso';
+  | "Arcilloso"
+  | "Franco arcilloso"
+  | "Franco"
+  | "Franco arenoso"
+  | "Arenoso";
 export type TTipoDrenaje =
-  | 'Mal Drenado'
-  | 'Moderadamente Drenado'
-  | 'Bien Drenado'
-  | 'Excesivamente Drenado';
+  | "Mal Drenado"
+  | "Moderadamente Drenado"
+  | "Bien Drenado"
+  | "Excesivamente Drenado";
 
 export type TTipoErosionEscorrentiaPendiente =
-  | 'Baja (0 - 3%)'
-  | 'Moderada (3 - 8%)'
-  | 'Alta (8 - 15%)'
-  | 'Muy Alta (> 15%)';
-export type TTipoContenidoP = '< 12' | '> 12 < 20' | '> 20 < 30' | '> 30';
+  | "Baja (0 - 3%)"
+  | "Moderada (3 - 8%)"
+  | "Alta (8 - 15%)"
+  | "Muy Alta (> 15%)";
+export type TTipoContenidoP = "< 12" | "> 12 < 20" | "> 20 < 30" | "> 30";
 
-export type TTipoDepositoN = '< 0.5' | '> 0.5' | '< 1.5' | '> 1.5';
+export type TTipoDepositoN = "< 0.5" | "> 0.5" | "< 1.5" | "> 1.5";
 
 export interface ISuelo {
   profundidad?: number;
@@ -75,6 +75,7 @@ export interface ILote {
   puntoMarchitez?: number;
   anchoDeBulbo?: number;
   metrosLinealesHas?: number;
+  serialCamara?: string;
   idQuimica?: string;
   idDistribuidor?: string;
   idProductor?: string;
@@ -106,23 +107,23 @@ export interface ILote {
 }
 
 type OmitirCreate =
-  | '_id'
-  | 'quimica'
-  | 'distribuidor'
-  | 'productor'
-  | 'establecimiento'
-  | 'departamento'
-  | 'sondaSuelo'
-  | 'dispositivos';
+  | "_id"
+  | "quimica"
+  | "distribuidor"
+  | "productor"
+  | "establecimiento"
+  | "departamento"
+  | "sondaSuelo"
+  | "dispositivos";
 export interface ICreateLote extends Omit<Partial<ILote>, OmitirCreate> {}
 
 type OmitirUpdate =
-  | '_id'
-  | 'quimica'
-  | 'distribuidor'
-  | 'productor'
-  | 'establecimiento'
-  | 'departamento'
-  | 'sondaSuelo'
-  | 'dispositivos';
+  | "_id"
+  | "quimica"
+  | "distribuidor"
+  | "productor"
+  | "establecimiento"
+  | "departamento"
+  | "sondaSuelo"
+  | "dispositivos";
 export interface IUpdateLote extends Omit<Partial<ILote>, OmitirUpdate> {}
