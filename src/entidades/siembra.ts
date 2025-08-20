@@ -74,6 +74,9 @@ export interface ISiembra {
   ultimaPrediccion?: IPrediccion;
   ultimaPrediccionRiego?: IResultadoPrediccionRiego[];
   aguaUtilReal?: number;
+  // Información adicional sobre el cálculo de agua útil
+  estadoCalculoAguaUtil?: "calculado" | "estimado" | "no_disponible";
+  motivoCalculoAguaUtil?: string;
 
   // Datos para huella hídrica
   humedadCosecha?: number;
