@@ -2,7 +2,7 @@ import { ILote } from "./lote"; // Adjust the path as necessary
 
 export interface IFoto {
   _id?: string;
-  fechaCreacion?: Date;
+  fechaCreacion?: string;
   url?: string; // URL de la foto
   idLote?: string; // ID del lote al que pertenece la foto
   // Populate
