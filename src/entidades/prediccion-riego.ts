@@ -90,7 +90,7 @@ export interface IVariablesPrediccionRiego {
   nivelesLecturaSensor?: INivelLecturaSensor[];
   aguaUtilFacilmenteDisponibleReal?: number;
   // Nuevos campos para mejor información al usuario
-  estadoCalculoAguaUtil?: 'calculado' | 'estimado' | 'no_disponible';
+  estadoCalculoAguaUtil?: "calculado" | "estimado" | "no_disponible";
   motivoCalculoAguaUtil?: string; // Ej: "Humedad alta impide detección de raíces"
   nivelesConRaicesDetectadas?: number; // Cantidad de niveles donde se detectaron raíces
   nivelesConDatosDisponibles?: number; // Total de niveles con datos de sensores
